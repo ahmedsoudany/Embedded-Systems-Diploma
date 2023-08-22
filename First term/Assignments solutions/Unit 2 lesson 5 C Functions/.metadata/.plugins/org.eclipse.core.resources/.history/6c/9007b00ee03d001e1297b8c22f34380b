@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 18, 2023
+ *      Author: LEGION
+ */
+
+
+#include "stdio.h"
+
+void prime_Number(int x , int y);
+
+
+int main()
+{
+	int x = 10 , y = 30;
+	prime_Number(10,30);
+	return 0;
+}
+
+void prime_Number(int x , int y)
+{
+	int i;
+
+	for(i = x ; i < y ;++i)
+	{
+		if(i%2 != 0)
+		printf("%d\t",i);
+	}
+}

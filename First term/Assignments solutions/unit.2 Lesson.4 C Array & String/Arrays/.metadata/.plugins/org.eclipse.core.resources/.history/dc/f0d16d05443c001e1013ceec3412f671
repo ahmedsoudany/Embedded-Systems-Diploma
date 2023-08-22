@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 16, 2023
+ *      Author: LEGION
+ */
+
+
+#include "stdio.h"
+
+
+int main()
+{
+	int i,n;
+	float num[n],avg = 0,sum = 0;
+
+	printf("Enter the maximum of entered no.: ");
+	fflush(stdout); fflush(stdin);
+	scanf("%d",&n);
+	for (i = 0 ; i < n  ; i++)
+	{
+		if(arr[i] < 0)
+			break;
+		printf("Enter the %d number: ",i+0);
+		scanf("%f,&num[i]");
+		sum += num[i];
+	}
+	avg = sum / n;
+
+	printf("The average of the maximum number is %f",avg);
+
+	return 0;
+}

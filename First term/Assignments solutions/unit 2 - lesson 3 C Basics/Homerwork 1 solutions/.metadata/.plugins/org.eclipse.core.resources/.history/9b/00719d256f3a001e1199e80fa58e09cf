@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 14, 2023
+ *      Author: LEGION
+ */
+
+
+#include "stdio.h"
+
+int main()
+{
+	for(unsigned int i=0;i>=0;i++);
+
+
+}

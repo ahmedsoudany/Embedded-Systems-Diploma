@@ -1,0 +1,46 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 16, 2023
+ *      Author: LEGION
+ */
+
+
+#include "stdio.h"
+
+int main()
+{
+	float arr1[2][2] , arr2[2][2], sum = 0;
+	int r , c;
+
+	for(r = 0 ; r < sizeof(arr1) ;r++)
+	{
+		printf("EANTER THE ELEMENTS OF 1st matrix\n");
+
+		for(c = 0 ; c < sizeof(arr1);c++)
+		{
+			printf("Enter a%d%d: ;\n",r,c);
+			fflush(stdout); fflush(stdin);
+			scanf("%f",&arr1[r][c]);
+		}
+	}
+
+	for(r = 0 ; r < sizeof(arr2) ;r++)
+		{
+			printf("EANTER THE ELEMENTS OF 2nd Matrix");
+			for(c = 0 ; c < sizeof(arr2);c++)
+			{
+				printf("Enter b%d%d: ;\n",r,c);
+				scanf("%f",&arr2[r][c]);
+			}
+		}
+
+	for(r = 0 ; r < sizeof(arr1) ;r++)
+	{
+		for(c = 0 ; c < sizeof(arr2);c++)
+			sum = arr1[r][c] + arr2[r][c];
+		printf("%0.2f\t",sum);
+
+	}
+	printf("\n");
+}

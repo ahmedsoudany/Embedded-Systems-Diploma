@@ -1,0 +1,35 @@
+19:22:01 **** Rebuild of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_sent':
+..\main.c:16:3: error: too many arguments to function 'puts'
+   puts("%c",arr[i]);
+   ^~~~
+In file included from ..\main.c:9:0:
+c:\mingw\include\stdio.h:677:41: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    puts (const char *);
+                                         ^~~~
+Info: Nothing to build for EX1
+19:22:11 **** Incremental Build of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -o EX2.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+19:22:11 **** Incremental Build of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o EX3.exe main.o 
+Info: Nothing to build for EX4
+Info: Nothing to build for EX3
+Info: Nothing to build for EX1
+19:22:38 **** Incremental Build of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -o EX2.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+19:22:38 **** Incremental Build of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o EX3.exe main.o 
+Info: Nothing to build for EX4
+Info: Nothing to build for EX3

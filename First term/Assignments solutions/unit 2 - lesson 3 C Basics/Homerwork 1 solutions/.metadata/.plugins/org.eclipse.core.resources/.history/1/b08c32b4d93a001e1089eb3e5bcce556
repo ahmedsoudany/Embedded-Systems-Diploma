@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 14, 2023
+ *      Author: LEGION
+ */
+
+
+#include "stdio.h"
+
+int main()
+{
+	int x = 4 + 2 %-8;
+	printf("%d",x);
+
+
+}

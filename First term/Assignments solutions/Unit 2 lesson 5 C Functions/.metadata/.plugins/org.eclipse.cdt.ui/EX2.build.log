@@ -1,0 +1,8 @@
+19:22:38 **** Incremental Build of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -o EX2.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+
+19:22:38 Build Failed. 1 errors, 0 warnings. (took 151ms)
+
