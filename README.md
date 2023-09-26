@@ -1,3 +1,3 @@
-# Embedded-Systems-Diploma
+# Embedded-Systems-Online-Diploma
 
 ## Ahmed Malik
