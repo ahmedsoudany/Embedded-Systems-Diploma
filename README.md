@@ -1,3 +1,3 @@
-# Embedded-Systems-Online-Diploma
+# Master-Embedded-Systems-Online-Diploma
 
-## Ahmed Malik
+## Ahmed Melik Alnasser 
