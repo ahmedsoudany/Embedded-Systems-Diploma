@@ -1,7 +1,0 @@
-14:39:54 **** Clean-only build of configuration Debug for project EX5 ****
-rm -rf main.o main.d EX5.exe 
-14:39:58 **** Rebuild of configuration Debug for project EX5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o EX5.exe main.o 
-Info: Nothing to build for EX5
