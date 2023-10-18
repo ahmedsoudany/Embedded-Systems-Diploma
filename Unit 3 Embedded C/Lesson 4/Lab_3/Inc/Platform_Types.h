@@ -1,4 +1,4 @@
-#ifndef  PLATFORM__TYPES__H
+#ifndef PLATFORM__TYPES__H
 #define  PLATFORM__TYPES__H
 	
 	
