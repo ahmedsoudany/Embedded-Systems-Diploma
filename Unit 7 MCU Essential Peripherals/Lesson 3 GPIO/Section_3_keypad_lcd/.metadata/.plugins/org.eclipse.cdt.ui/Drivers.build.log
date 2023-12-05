@@ -1,0 +1,23 @@
+14:02:19 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+
+14:02:19 Build Finished. 0 errors, 0 warnings. (took 490ms)
+

@@ -1,0 +1,31 @@
+21:43:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1632	   5032	   13a8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+ 
+
+21:43:57 Build Finished. 0 errors, 1 warnings. (took 548ms)
+

@@ -1,0 +1,524 @@
+16:36:39 **** Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+16:40:06 **** Clean-only build of configuration Debug for project Drivers ****
+make -j16 clean 
+rm -rf *
+ 
+16:40:06 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c:8:10: fatal error: STM32F103C6_GPIO_Drivers.h: No such file or directory
+ #include "STM32F103C6_GPIO_Drivers.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:18: STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:40:26 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c:8:10: fatal error: STM32F103C6_GPIO_Drivers.h: No such file or directory
+ #include "STM32F103C6_GPIO_Drivers.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+../STM32F103C6_Drivers/HAL/KEYPAD.c:9:10: fatal error: KEYPAD.h: No such file or directory
+ #include "KEYPAD.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:18: STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o] Error 1
+make: *** Waiting for unfinished jobs....
+../STM32F103C6_Drivers/HAL/LCD.c:9:10: fatal error: LCD.h: No such file or directory
+ #include "LCD.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:24: STM32F103C6_Drivers/HAL/KEYPAD.o] Error 1
+../STM32F103C6_Drivers/HAL/S7_Segment.c:8:10: fatal error: S7_Segment.h: No such file or directory
+ #include "S7_Segment.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:26: STM32F103C6_Drivers/HAL/LCD.o] Error 1
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:28: STM32F103C6_Drivers/HAL/S7_Segment.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:41:06 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+ 
+16:43:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+16:44:24 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o"
+In file included from ../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:11:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/STM32F103C6_EXTI_Drivers.h:16:10: fatal error: STM32F103C6_GPIO_Driver.h: No such file or directory
+ #include "STM32F103C6_GPIO_Driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:21: STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:44:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o"
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Enable_NVIC':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:45:4: error: 'NVIC_IRQ6_EXTI0_Enable' undeclared (first use in this function); did you mean 'EXTI_IRQ_Enable'?
+    NVIC_IRQ6_EXTI0_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    EXTI_IRQ_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:45:4: note: each undeclared identifier is reported only once for each function it appears in
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:49:4: error: 'NVIC_IRQ7_EXTI1_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Enable'?
+    NVIC_IRQ7_EXTI1_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ6_EXTI0_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:53:4: error: 'NVIC_IRQ8_EXTI2_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Enable'?
+    NVIC_IRQ8_EXTI2_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ7_EXTI1_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:57:4: error: 'NVIC_IRQ9_EXTI3_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Enable'?
+    NVIC_IRQ9_EXTI3_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ8_EXTI2_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:61:4: error: 'NVIC_IRQ10_EXTI4_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Enable'?
+    NVIC_IRQ10_EXTI4_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ9_EXTI3_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:69:4: error: 'NVIC_IRQ23_EXTI5_9_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Enable'?
+    NVIC_IRQ23_EXTI5_9_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ10_EXTI4_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:78:4: error: 'NVIC_IRQ40_EXTI10_15_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Enable'?
+    NVIC_IRQ40_EXTI10_15_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ23_EXTI5_9_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Disable_NVIC':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:89:4: error: 'NVIC_IRQ6_EXTI0_Disable' undeclared (first use in this function); did you mean 'EXTI_IRQ_Disable'?
+    NVIC_IRQ6_EXTI0_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    EXTI_IRQ_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:93:4: error: 'NVIC_IRQ7_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Disable'?
+    NVIC_IRQ7_EXTI1_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ6_EXTI0_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:97:4: error: 'NVIC_IRQ8_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+    NVIC_IRQ8_EXTI2_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ7_EXTI1_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:101:4: error: 'NVIC_IRQ9_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Disable'?
+    NVIC_IRQ9_EXTI3_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ8_EXTI2_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:105:4: error: 'NVIC_IRQ10_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Disable'?
+    NVIC_IRQ10_EXTI4_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ9_EXTI3_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:113:4: error: 'NVIC_IRQ23_EXTI5_9_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Disable'?
+    NVIC_IRQ23_EXTI5_9_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ10_EXTI4_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:122:4: error: 'NVIC_IRQ40_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Disable'?
+    NVIC_IRQ40_EXTI10_15_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ23_EXTI5_9_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Update_EXTI':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:137:9: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Mode'; did you mean 'GPIO_MODE'?
+  PinCfg.GPIO_Mode = GPIO_MODE_INPUT_FLO;
+         ^~~~~~~~~
+         GPIO_MODE
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'MCAL_EXTI_GPIO_Denit':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:220:2: error: 'NVIC_IRQ6_EXTI0_Disable' undeclared (first use in this function); did you mean 'EXTI_IRQ_Disable'?
+  NVIC_IRQ6_EXTI0_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  EXTI_IRQ_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:221:2: error: 'NVIC_IRQ7_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Disable'?
+  NVIC_IRQ7_EXTI1_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ6_EXTI0_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:222:2: error: 'NVIC_IRQ8_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+  NVIC_IRQ8_EXTI2_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ7_EXTI1_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:223:2: error: 'NVIC_IRQ9_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Disable'?
+  NVIC_IRQ9_EXTI3_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ8_EXTI2_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:224:2: error: 'NVIC_IRQ10_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Disable'?
+  NVIC_IRQ10_EXTI4_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ9_EXTI3_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:225:2: error: 'NVIC_IRQ23_EXTI5_9_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Disable'?
+  NVIC_IRQ23_EXTI5_9_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ10_EXTI4_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:226:2: error: 'NVIC_IRQ40_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Disable'?
+  NVIC_IRQ40_EXTI10_15_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ23_EXTI5_9_Disable
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:21: STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:45:04 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o"
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Enable_NVIC':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:46:4: error: 'NVIC_IRQ6_EXTI0_Enable' undeclared (first use in this function); did you mean 'EXTI_IRQ_Enable'?
+    NVIC_IRQ6_EXTI0_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    EXTI_IRQ_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:46:4: note: each undeclared identifier is reported only once for each function it appears in
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:50:4: error: 'NVIC_IRQ7_EXTI1_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Enable'?
+    NVIC_IRQ7_EXTI1_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ6_EXTI0_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:54:4: error: 'NVIC_IRQ8_EXTI2_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Enable'?
+    NVIC_IRQ8_EXTI2_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ7_EXTI1_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:58:4: error: 'NVIC_IRQ9_EXTI3_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Enable'?
+    NVIC_IRQ9_EXTI3_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ8_EXTI2_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:62:4: error: 'NVIC_IRQ10_EXTI4_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Enable'?
+    NVIC_IRQ10_EXTI4_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ9_EXTI3_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:70:4: error: 'NVIC_IRQ23_EXTI5_9_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Enable'?
+    NVIC_IRQ23_EXTI5_9_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ10_EXTI4_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:79:4: error: 'NVIC_IRQ40_EXTI10_15_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Enable'?
+    NVIC_IRQ40_EXTI10_15_Enable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ23_EXTI5_9_Enable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Disable_NVIC':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:90:4: error: 'NVIC_IRQ6_EXTI0_Disable' undeclared (first use in this function); did you mean 'EXTI_IRQ_Disable'?
+    NVIC_IRQ6_EXTI0_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    EXTI_IRQ_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:94:4: error: 'NVIC_IRQ7_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Disable'?
+    NVIC_IRQ7_EXTI1_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ6_EXTI0_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:98:4: error: 'NVIC_IRQ8_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+    NVIC_IRQ8_EXTI2_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ7_EXTI1_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:102:4: error: 'NVIC_IRQ9_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Disable'?
+    NVIC_IRQ9_EXTI3_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ8_EXTI2_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:106:4: error: 'NVIC_IRQ10_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Disable'?
+    NVIC_IRQ10_EXTI4_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ9_EXTI3_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:114:4: error: 'NVIC_IRQ23_EXTI5_9_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Disable'?
+    NVIC_IRQ23_EXTI5_9_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ10_EXTI4_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:123:4: error: 'NVIC_IRQ40_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Disable'?
+    NVIC_IRQ40_EXTI10_15_Disable;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NVIC_IRQ23_EXTI5_9_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Update_EXTI':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:138:9: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Mode'; did you mean 'GPIO_MODE'?
+  PinCfg.GPIO_Mode = GPIO_MODE_INPUT_FLO;
+         ^~~~~~~~~
+         GPIO_MODE
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'MCAL_EXTI_GPIO_Denit':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:221:2: error: 'NVIC_IRQ6_EXTI0_Disable' undeclared (first use in this function); did you mean 'EXTI_IRQ_Disable'?
+  NVIC_IRQ6_EXTI0_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  EXTI_IRQ_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:222:2: error: 'NVIC_IRQ7_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Disable'?
+  NVIC_IRQ7_EXTI1_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ6_EXTI0_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:223:2: error: 'NVIC_IRQ8_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+  NVIC_IRQ8_EXTI2_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ7_EXTI1_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:224:2: error: 'NVIC_IRQ9_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Disable'?
+  NVIC_IRQ9_EXTI3_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ8_EXTI2_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:225:2: error: 'NVIC_IRQ10_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Disable'?
+  NVIC_IRQ10_EXTI4_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ9_EXTI3_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:226:2: error: 'NVIC_IRQ23_EXTI5_9_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Disable'?
+  NVIC_IRQ23_EXTI5_9_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ10_EXTI4_Disable
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:227:2: error: 'NVIC_IRQ40_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ23_EXTI5_9_Disable'?
+  NVIC_IRQ40_EXTI10_15_Disable;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ23_EXTI5_9_Disable
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:21: STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:45:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c: In function 'Update_EXTI':
+../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c:138:9: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Mode'; did you mean 'GPIO_MODE'?
+  PinCfg.GPIO_Mode = GPIO_MODE_INPUT_FLO;
+         ^~~~~~~~~
+         GPIO_MODE
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:21: STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:46:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_EXTI_Drivers.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    864	      8	   1624	   2496	    9c0	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+16:46:45 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:29:10: fatal error: STM32F103C6_GPIO_Driver.h: No such file or directory
+ #include "STM32F103C6_GPIO_Driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:47:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'clock_init':
+../Src/main.c:43:2: warning: implicit declaration of function 'AFIO_GPIO_CLK_EN'; did you mean 'RCC_GPIOE_CLK_EN'? [-Wimplicit-function-declaration]
+  AFIO_GPIO_CLK_EN();
+  ^~~~~~~~~~~~~~~~
+  RCC_GPIOE_CLK_EN
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/lcd.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `clock_init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/Debug/../Src/main.c:43: undefined reference to `AFIO_GPIO_CLK_EN'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:54: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:47:50 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/lCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1632	   5032	   13a8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+16:51:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/lCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1632	   5032	   13a8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+16:52:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/lCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1632	   5032	   13a8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+17:53:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/lCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1632	   5032	   13a8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+21:43:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:57:16: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+  LCD_Write_Str("IRQ EXTI9 is happened _|- ");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_4_EXTI/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_4_EXTI\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1632	   5032	   13a8	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+ 

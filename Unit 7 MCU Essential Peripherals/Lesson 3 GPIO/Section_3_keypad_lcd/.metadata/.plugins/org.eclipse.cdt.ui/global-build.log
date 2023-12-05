@@ -1,0 +1,1376 @@
+08:15:29 **** Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+08:15:43 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:43: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:49: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:82: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:85: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:88: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:16:33 **** Clean-only build of configuration Debug for project Drivers ****
+make -j16 clean 
+rm -rf *
+ 
+08:16:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+08:20:41 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:17:10: fatal error: STM32_F103C6_GPIO_Driver.h: No such file or directory
+ #include "STM32_F103C6_GPIO_Driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+compilation terminated.
+In file included from ../STM32F103C6_Drivers/HAL/LCD.c:9:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:17:10: fatal error: STM32_F103C6_GPIO_Driver.h: No such file or directory
+ #include "STM32_F103C6_GPIO_Driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:23: STM32F103C6_Drivers/HAL/LCD.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:20:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:109:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:124:3: warning: implicit declaration of function 'keypad_Init' [-Wimplicit-function-declaration]
+   keypad_Init();
+   ^~~~~~~~~~~
+../Src/main.c:125:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:128:21: warning: implicit declaration of function 'keypad_GetKey' [-Wimplicit-function-declaration]
+       key_pressed = keypad_GetKey();
+                     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+08:22:51 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+ 
+08:25:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:109:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:124:3: warning: implicit declaration of function 'keypad_Init' [-Wimplicit-function-declaration]
+   keypad_Init();
+   ^~~~~~~~~~~
+../Src/main.c:125:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:129:21: warning: implicit declaration of function 'keypad_GetKey' [-Wimplicit-function-declaration]
+       key_pressed = keypad_GetKey();
+                     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3092	     40	   1568	   4700	   125c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+08:27:32 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:109:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:124:3: warning: implicit declaration of function 'keypad_Init' [-Wimplicit-function-declaration]
+   keypad_Init();
+   ^~~~~~~~~~~
+../Src/main.c:125:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:129:21: warning: implicit declaration of function 'keypad_GetKey' [-Wimplicit-function-declaration]
+       key_pressed = keypad_GetKey();
+                     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3072	     40	   1568	   4680	   1248	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+08:28:23 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:126:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3088	     40	   1568	   4696	   1258	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+08:29:25 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:109:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:124:3: warning: implicit declaration of function 'keypad_Init' [-Wimplicit-function-declaration]
+   keypad_Init();
+   ^~~~~~~~~~~
+../Src/main.c:125:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:129:21: warning: implicit declaration of function 'keypad_GetKey' [-Wimplicit-function-declaration]
+       key_pressed = keypad_GetKey();
+                     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+08:34:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:109:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:124:3: warning: implicit declaration of function 'keypad_Init' [-Wimplicit-function-declaration]
+   keypad_Init();
+   ^~~~~~~~~~~
+../Src/main.c:125:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:130:21: warning: implicit declaration of function 'keypad_GetKey' [-Wimplicit-function-declaration]
+       key_pressed = keypad_GetKey();
+                     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+08:40:40 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+../STM32F103C6_Drivers/HAL/S7_Segment.c: In function 'S7_Segment_Init':
+../STM32F103C6_Drivers/HAL/S7_Segment.c:12:2: error: unknown type name 'GPIO_PinConfig_t'
+  GPIO_PinConfig_t PinCfg;
+  ^~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/S7_Segment.c:15:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_9;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:15:26: error: 'GPIO_PIN_9' undeclared (first use in this function)
+  PinCfg.GPIO_PinNumber = GPIO_PIN_9;
+                          ^~~~~~~~~~
+../STM32F103C6_Drivers/HAL/S7_Segment.c:15:26: note: each undeclared identifier is reported only once for each function it appears in
+../STM32F103C6_Drivers/HAL/S7_Segment.c:16:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:16:21: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function)
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+                     ^~~~~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/S7_Segment.c:17:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:17:29: error: 'GPIO_SPEED_10M' undeclared (first use in this function); did you mean 'GPIO_PIN_9'?
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+                             ^~~~~~~~~~~~~~
+                             GPIO_PIN_9
+../STM32F103C6_Drivers/HAL/S7_Segment.c:18:2: warning: implicit declaration of function 'MCAL_GPIO_Init' [-Wimplicit-function-declaration]
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+  ^~~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/S7_Segment.c:18:17: error: 'GPIOB' undeclared (first use in this function)
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+                 ^~~~~
+../STM32F103C6_Drivers/HAL/S7_Segment.c:21:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_10;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:21:26: error: 'GPIO_PIN_10' undeclared (first use in this function); did you mean 'GPIO_PIN_9'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_10;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_9
+../STM32F103C6_Drivers/HAL/S7_Segment.c:22:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:23:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:26:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_11;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:26:26: error: 'GPIO_PIN_11' undeclared (first use in this function); did you mean 'GPIO_PIN_10'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_11;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_10
+../STM32F103C6_Drivers/HAL/S7_Segment.c:27:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:28:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:31:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_12;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:31:26: error: 'GPIO_PIN_12' undeclared (first use in this function); did you mean 'GPIO_PIN_11'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_12;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_11
+../STM32F103C6_Drivers/HAL/S7_Segment.c:32:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:33:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:36:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:36:26: error: 'GPIO_PIN_13' undeclared (first use in this function); did you mean 'GPIO_PIN_12'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_12
+../STM32F103C6_Drivers/HAL/S7_Segment.c:37:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:38:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:41:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_14;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:41:26: error: 'GPIO_PIN_14' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_14;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_13
+../STM32F103C6_Drivers/HAL/S7_Segment.c:42:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:43:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:46:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_15;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:46:26: error: 'GPIO_PIN_15' undeclared (first use in this function); did you mean 'GPIO_PIN_14'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_15;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_14
+../STM32F103C6_Drivers/HAL/S7_Segment.c:47:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../STM32F103C6_Drivers/HAL/S7_Segment.c:48:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:28: STM32F103C6_Drivers/HAL/S7_Segment.o] Error 1
+make: *** Waiting for unfinished jobs....
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:126:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:57:3: warning: implicit declaration of function 'GPIO_Init'; did you mean 'LCD_Init'? [-Wimplicit-function-declaration]
+   GPIO_Init();
+   ^~~~~~~~~
+   LCD_Init
+../Src/main.c:60:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:76:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:41:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+../Src/main.c: In function 'main':
+../Src/main.c:57:3: warning: implicit declaration of function 'GPIO_Init'; did you mean 'LCD_Init'? [-Wimplicit-function-declaration]
+   GPIO_Init();
+   ^~~~~~~~~
+   LCD_Init
+../Src/main.c:60:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:76:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:57: undefined reference to `GPIO_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:54: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:42:25 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+08:42:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+08:44:51 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:126:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:68:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+11:43:43 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/KEYPAD.c:145:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+11:47:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/S7_Segment.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/S7_Segment.d" -MT"STM32F103C6_Drivers/HAL/S7_Segment.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/S7_Segment.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:81:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:03:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'Keypad_init':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:161:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/KEYPAD.c:166:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/KEYPAD.c:171:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/KEYPAD.c:176:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/KEYPAD.c:181:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/KEYPAD.c:186:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../Src/main.c: In function 'main':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:191:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../STM32F103C6_Drivers/HAL/KEYPAD.c:196:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_Output_Speed'
+  PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:24: STM32F103C6_Drivers/HAL/KEYPAD.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:03:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:59: undefined reference to `keypad_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:86: undefined reference to `keypad_GetKey'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:54: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:04:04 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+Finished building: Drivers.hex
+ 
+ 
+ 
+13:06:47 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3104	     40	   1568	   4712	   1268	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:08:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3104	     40	   1568	   4712	   1268	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+13:11:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+13:12:25 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+13:14:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:18:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+In file included from ../Src/main.c:31:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/KEYPAD.h:14:0: warning: "F_CPU" redefined
+ #define F_CPU 8000000UL
+ 
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:11:0: note: this is the location of the previous definition
+ #define  F_CPU    1000000UL
+ 
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+13:19:23 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:78:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:32:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:82:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:33:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_Init':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:32:17: error: 'KeypadPORT' undeclared (first use in this function); did you mean 'Keypad_Col'?
+  MCAL_GPIO_Init(KeypadPORT, &PinCfg);
+                 ^~~~~~~~~~
+                 Keypad_Col
+../STM32F103C6_Drivers/HAL/KEYPAD.c:32:17: note: each undeclared identifier is reported only once for each function it appears in
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:82:22: error: 'KeypadPORT' undeclared (first use in this function); did you mean 'Keypad_Col'?
+   MCAL_GPIO_WritePin(KeypadPORT, Keypad_Col[0], GPIO_PIN_SET);
+                      ^~~~~~~~~~
+                      Keypad_Col
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/HAL/KEYPAD.c:145:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:82:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+make: *** [STM32F103C6_Drivers/HAL/subdir.mk:24: STM32F103C6_Drivers/HAL/KEYPAD.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:34:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+../STM32F103C6_Drivers/HAL/KEYPAD.c: In function 'keypad_GetKey':
+../STM32F103C6_Drivers/HAL/KEYPAD.c:145:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:82:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+13:35:30 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+13:38:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+13:38:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:82:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:41:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:82:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:42:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+../Src/main.c: In function 'main':
+../Src/main.c:62:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:82:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:47:15 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/LCD.d" -MT"STM32F103C6_Drivers/HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/LCD.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+13:56:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:61:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:85:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:99:9: warning: implicit declaration of function 'LCD_clear_screen'; did you mean 'LCD_Clear_Screen'? [-Wimplicit-function-declaration]
+         LCD_clear_screen();
+         ^~~~~~~~~~~~~~~~
+         LCD_Clear_Screen
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/Debug/../Src/main.c:99: undefined reference to `LCD_clear_screen'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:54: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:56:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:61:20: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+      LCD_Write_Str("Learn_in_depth");
+                    ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+../Src/main.c:85:17: warning: pointer targets in passing argument 1 of 'LCD_Write_Str' differ in signedness [-Wpointer-sign]
+   LCD_Write_Str("Keypad is Ready");
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:30:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc/LCD.h:79:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_Write_Str(uint8_t* st);
+      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+13:59:08 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+14:02:19 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/HAL/KEYPAD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Section_3_keypad_lcd/Drivers/STM32F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/HAL/KEYPAD.d" -MT"STM32F103C6_Drivers/HAL/KEYPAD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/HAL/KEYPAD.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Section_3_keypad_lcd\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3096	     40	   1568	   4704	   1260	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 

@@ -1,0 +1,864 @@
+07:42:21 **** Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+07:42:40 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:24:0:
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:13:1: error: expected identifier or '(' before '/' token
+ /-----------------------------
+ ^
+In file included from D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:15:0,
+                 from D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:17,
+                 from ../Src/main.c:24:
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:74:33: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void    arc4random_buf (void *, size_t);
+                                 ^~~~~~
+                                 _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:87:10: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+          size_t __nmemb,
+          ^~~~~~
+          _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:88:10: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+          size_t __size,
+          ^~~~~~
+          _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:90:16: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * calloc (size_t __nmemb, size_t __size) _NOTHROW;
+                ^~~~~~
+                _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:90:32: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * calloc (size_t __nmemb, size_t __size) _NOTHROW;
+                                ^~~~~~
+                                _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:104:16: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * malloc (size_t __size) _NOTHROW;
+                ^~~~~~
+                _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:105:26: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ int mblen (const char *, size_t);
+                          ^~~~~~
+                          _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:106:46: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ int _mblen_r (struct _reent *, const char *, size_t, _mbstate_t *);
+                                              ^~~~~~
+                                              _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:107:58: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ int mbtowc (wchar_t *__restrict, const char *__restrict, size_t);
+                                                          ^~~~~~
+                                                          _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:108:78: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ int _mbtowc_r (struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *);
+                                                                              ^~~~~~
+                                                                              _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:111:1: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t mbstowcs (wchar_t *__restrict, const char *__restrict, size_t);
+ ^~~~~~
+ _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:111:63: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t mbstowcs (wchar_t *__restrict, const char *__restrict, size_t);
+                                                               ^~~~~~
+                                                               _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:112:1: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t _mbstowcs_r (struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *);
+ ^~~~~~
+ _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:112:83: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t _mbstowcs_r (struct _reent *, wchar_t *__restrict, const char *__restrict, size_t, _mbstate_t *);
+                                                                                   ^~~~~~
+                                                                                   _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:113:1: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t wcstombs (char *__restrict, const wchar_t *__restrict, size_t);
+ ^~~~~~
+ _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:113:63: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t wcstombs (char *__restrict, const wchar_t *__restrict, size_t);
+                                                               ^~~~~~
+                                                               _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:114:1: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t _wcstombs_r (struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *);
+ ^~~~~~
+ _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:114:83: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ size_t _wcstombs_r (struct _reent *, char *__restrict, const wchar_t *__restrict, size_t, _mbstate_t *);
+                                                                                   ^~~~~~
+                                                                                   _ssize_t
+In file included from D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:15:0,
+                 from D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:17,
+                 from ../Src/main.c:24:
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:139:27: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void qsort (void *__base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+                           ^~~~~~
+                           _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:139:43: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void qsort (void *__base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+                                           ^~~~~~
+                                           _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:141:28: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * realloc (void *__r, size_t __size) _NOTHROW;
+                            ^~~~~~
+                            _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:143:28: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void *reallocarray(void *, size_t, size_t) __result_use_check __alloc_size(2)
+                            ^~~~~~
+                            _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:143:36: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void *reallocarray(void *, size_t, size_t) __result_use_check __alloc_size(2)
+                                    ^~~~~~
+                                    _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:145:29: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * reallocf (void *__r, size_t __size);
+                             ^~~~~~
+                             _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:205:46: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * _reallocf_r (struct _reent *, void *, size_t);
+                                              ^~~~~~
+                                              _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:254:37: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ char * initstate (unsigned, char *, size_t);
+                                     ^~~~~~
+                                     _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:285:46: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ int __nonnull ((1)) posix_memalign (void **, size_t, size_t);
+                                              ^~~~~~
+                                              _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:285:54: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ int __nonnull ((1)) posix_memalign (void **, size_t, size_t);
+                                                      ^~~~~~
+                                                      _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:290:36: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * _malloc_r (struct _reent *, size_t) _NOTHROW;
+                                    ^~~~~~
+                                    _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:291:36: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * _calloc_r (struct _reent *, size_t, size_t) _NOTHROW;
+                                    ^~~~~~
+                                    _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:291:44: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * _calloc_r (struct _reent *, size_t, size_t) _NOTHROW;
+                                            ^~~~~~
+                                            _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:293:45: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void * _realloc_r (struct _reent *, void *, size_t) _NOTHROW;
+                                             ^~~~~~
+                                             _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:308:29: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void qsort_r (void *__base, size_t __nmemb, size_t __size, void *__thunk, int (*_compar)(void *, const void *, const void *))
+                             ^~~~~~
+                             _ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdlib.h:308:45: error: unknown type name 'size_t'; did you mean '_ssize_t'?
+ void qsort_r (void *__base, size_t __nmemb, size_t __size, void *__thunk, int (*_compar)(void *, const void *, const void *))
+                                             ^~~~~~
+                                             _ssize_t
+In file included from D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:17:0,
+                 from D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:17,
+                 from ../Src/main.c:24:
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:195:55: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int setvbuf (FILE *__restrict, char *__restrict, int, size_t);
+                                                       ^~~~~~
+                                                       ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:223:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:223:33: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                 ^~~~~~
+                                 ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:223:47: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                               ^~~~~~
+                                               ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:224:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fwrite (const void *__restrict , size_t _size, size_t _n, FILE *);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:224:41: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fwrite (const void *__restrict , size_t _size, size_t _n, FILE *);
+                                         ^~~~~~
+                                         ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:224:55: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fwrite (const void *__restrict , size_t _size, size_t _n, FILE *);
+                                                       ^~~~~~
+                                                       ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:266:33: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int snprintf (char *__restrict, size_t, const char *__restrict, ...)
+                                 ^~~~~~
+                                 ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:268:34: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int vsnprintf (char *__restrict, size_t, const char *__restrict, __VALIST)
+                                  ^~~~~~
+                                  ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:286:28: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * asniprintf (char *, size_t *, const char *, ...)
+                            ^~~~~~
+                            ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:288:37: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * asnprintf (char *__restrict, size_t *__restrict, const char *__restrict, ...)
+                                     ^~~~~~
+                                     ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:306:24: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int sniprintf (char *, size_t, const char *, ...)
+                        ^~~~~~
+                        ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:310:29: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * vasniprintf (char *, size_t *, const char *, __VALIST)
+                             ^~~~~~
+                             ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:312:28: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * vasnprintf (char *, size_t *, const char *, __VALIST)
+                            ^~~~~~
+                            ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:328:25: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int vsniprintf (char *, size_t, const char *, __VALIST)
+                         ^~~~~~
+                         ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:377:36: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ FILE * fmemopen (void *__restrict, size_t, const char *__restrict);
+                                    ^~~~~~
+                                    ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:380:33: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ FILE * open_memstream (char **, size_t *);
+                                 ^~~~~~
+                                 ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:398:48: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
+                                                ^~~~~~
+                                                ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:400:57: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * _asnprintf_r (struct _reent *, char *__restrict, size_t *__restrict, const char *__restrict, ...)
+                                                         ^~~~~~
+                                                         ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:427:56: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ FILE * _fmemopen_r (struct _reent *, void *__restrict, size_t, const char *__restrict);
+                                                        ^~~~~~
+                                                        ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:437:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fread_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:437:53: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fread_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                     ^~~~~~
+                                                     ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:437:67: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fread_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                                   ^~~~~~
+                                                                   ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:438:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fread_unlocked_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:438:62: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fread_unlocked_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                              ^~~~~~
+                                                              ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:438:76: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fread_unlocked_r (struct _reent *, void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                                            ^~~~~~
+                                                                            ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:446:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fwrite_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:446:60: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fwrite_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                            ^~~~~~
+                                                            ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:446:74: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fwrite_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                                          ^~~~~~
+                                                                          ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:447:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fwrite_unlocked_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:447:69: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fwrite_unlocked_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                                     ^~~~~~
+                                                                     ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:447:83: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t _fwrite_unlocked_r (struct _reent *, const void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                                                   ^~~~~~
+                                                                                   ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:457:53: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ FILE * _open_memstream_r (struct _reent *, char **, size_t *);
+                                                     ^~~~~~
+                                                     ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:475:44: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int _sniprintf_r (struct _reent *, char *, size_t, const char *, ...)
+                                            ^~~~~~
+                                            ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:477:53: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int _snprintf_r (struct _reent *, char *__restrict, size_t, const char *__restrict, ...)
+                                                     ^~~~~~
+                                                     ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:489:48: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * _vasniprintf_r (struct _reent*, char *, size_t *, const char *, __VALIST)
+                                                ^~~~~~
+                                                ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:491:47: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ char * _vasnprintf_r (struct _reent*, char *, size_t *, const char *, __VALIST)
+                                               ^~~~~~
+                                               ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:519:45: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int _vsniprintf_r (struct _reent *, char *, size_t, const char *, __VALIST)
+                                             ^~~~~~
+                                             ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:521:54: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ int _vsnprintf_r (struct _reent *, char *__restrict, size_t, const char *__restrict, __VALIST)
+                                                      ^~~~~~
+                                                      ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:531:30: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ ssize_t __getdelim (char **, size_t *, int, FILE *);
+                              ^~~~~~
+                              ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:532:29: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ ssize_t __getline (char **, size_t *, FILE *);
+                             ^~~~~~
+                             ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:542:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fread_unlocked (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:542:42: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fread_unlocked (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                          ^~~~~~
+                                          ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:542:56: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fread_unlocked (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+                                                        ^~~~~~
+                                                        ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:543:1: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fwrite_unlocked (const void *__restrict , size_t _size, size_t _n, FILE *);
+ ^~~~~~
+ ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:543:50: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fwrite_unlocked (const void *__restrict , size_t _size, size_t _n, FILE *);
+                                                  ^~~~~~
+                                                  ssize_t
+d:\st\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\arm-none-eabi\include\stdio.h:543:64: error: unknown type name 'size_t'; did you mean 'ssize_t'?
+ size_t fwrite_unlocked (const void *__restrict , size_t _size, size_t _n, FILE *);
+                                                                ^~~~~~
+                                                                ssize_t
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:42:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:43: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:49: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:83: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:85: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:89: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:91: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:44:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:44:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:45:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:46:04 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_Init':
+../Src/main.c:47:2: error: expected ';' before 'PinCfg'
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+  ^~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:46:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:45: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:47:40 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:48:46 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:49:01 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_Init':
+../Src/main.c:40:2: error: unknown type name 'GPIO_PinConfig_t'
+  GPIO_PinConfig_t PinCfg;
+  ^~~~~~~~~~~~~~~~
+../Src/main.c:43:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+        ^
+../Src/main.c:43:26: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_Init'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+                          ^~~~~~~~~~
+                          GPIO_Init
+../Src/main.c:43:26: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:44:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:44:21: error: 'GPIO_MODE_INPUT_FLO' undeclared (first use in this function)
+  PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+                     ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:45:2: warning: implicit declaration of function 'MCAL_GPIO_Init'; did you mean 'GPIO_Init'? [-Wimplicit-function-declaration]
+  MCAL_GPIO_Init(GPIOA, &PinCfg);
+  ^~~~~~~~~~~~~~
+  GPIO_Init
+../Src/main.c:48:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+        ^
+../Src/main.c:49:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:49:21: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function); did you mean 'GPIO_MODE_INPUT_FLO'?
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+                     ^~~~~~~~~~~~~~~~~~~
+                     GPIO_MODE_INPUT_FLO
+../Src/main.c:50:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../Src/main.c:50:29: error: 'GPIO_SPEED_10M' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+                             ^~~~~~~~~~~~~~
+                             GPIO_PIN_1
+../Src/main.c:56:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+        ^
+../Src/main.c:56:26: error: 'GPIO_PIN_13' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_1
+../Src/main.c:57:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:61:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+        ^
+../Src/main.c:62:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:63:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../Src/main.c: In function 'main':
+../Src/main.c:85:7: warning: implicit declaration of function 'MCAL_GPIO_ReadPin' [-Wimplicit-function-declaration]
+   if( MCAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == 0) //press
+       ^~~~~~~~~~~~~~~~~
+../Src/main.c:85:32: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_Init'?
+   if( MCAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == 0) //press
+                                ^~~~~~~~~~
+                                GPIO_Init
+../Src/main.c:87:4: warning: implicit declaration of function 'MCAL_GPIO_TogglePin' [-Wimplicit-function-declaration]
+    MCAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+    ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:91:31: error: 'GPIO_PIN_13' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+   if(MCAL_GPIO_ReadPin(GPIOA, GPIO_PIN_13) == 1) //Multi pressing
+                               ^~~~~~~~~~~
+                               GPIO_PIN_1
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:49:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:45: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:51: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:58: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:64: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:85: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:88: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:91: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:93: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:49:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:69: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:75: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:96: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:98: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:99: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:102: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:104: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:49:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:69: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:75: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:96: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:98: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:99: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:102: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:104: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:49:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:69: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:75: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:96: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:98: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:99: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:102: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:104: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:50:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:69: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:75: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:96: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:98: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:99: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:102: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:104: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:50:01 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:69: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:75: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:96: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:98: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:99: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:102: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:104: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:50:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:56: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:62: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:69: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:75: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:96: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:98: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:99: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:102: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:104: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:50:14 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:28:41: error: unknown type name 'GPIO_PinConfig_t'
+ void MCAL_GPIO_Init(GPIO_TypeDef *GPIOx,GPIO_PinConfig_t *PinConfig);
+                                         ^~~~~~~~~~~~~~~~
+../Src/main.c: In function 'GPIO_Init':
+../Src/main.c:51:2: error: unknown type name 'GPIO_PinConfig_t'
+  GPIO_PinConfig_t PinCfg;
+  ^~~~~~~~~~~~~~~~
+../Src/main.c:54:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+        ^
+../Src/main.c:54:26: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_Init'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+                          ^~~~~~~~~~
+                          GPIO_Init
+../Src/main.c:54:26: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:55:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:55:21: error: 'GPIO_MODE_INPUT_FLO' undeclared (first use in this function)
+  PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+                     ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:56:2: warning: implicit declaration of function 'MCAL_GPIO_Init'; did you mean 'MCAL_GPIO_DeInit'? [-Wimplicit-function-declaration]
+  MCAL_GPIO_Init(GPIOA, &PinCfg);
+  ^~~~~~~~~~~~~~
+  MCAL_GPIO_DeInit
+../Src/main.c:59:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+        ^
+../Src/main.c:60:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:60:21: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function); did you mean 'GPIO_MODE_INPUT_FLO'?
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+                     ^~~~~~~~~~~~~~~~~~~
+                     GPIO_MODE_INPUT_FLO
+../Src/main.c:61:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../Src/main.c:61:29: error: 'GPIO_SPEED_10M' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+                             ^~~~~~~~~~~~~~
+                             GPIO_PIN_1
+../Src/main.c:67:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+        ^
+../Src/main.c:67:26: error: 'GPIO_PIN_13' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+                          ^~~~~~~~~~~
+                          GPIO_PIN_1
+../Src/main.c:68:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:72:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber = GPIO_PIN_13;
+        ^
+../Src/main.c:73:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:74:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
+        ^
+../Src/main.c: In function 'main':
+../Src/main.c:96:32: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_Init'?
+   if( MCAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == 0) //press
+                                ^~~~~~~~~~
+                                GPIO_Init
+../Src/main.c:102:31: error: 'GPIO_PIN_13' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+   if(MCAL_GPIO_ReadPin(GPIOA, GPIO_PIN_13) == 1) //Multi pressing
+                               ^~~~~~~~~~~
+                               GPIO_PIN_1
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:50:31 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `GPIO_Init':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:50: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:57: undefined reference to `MCAL_GPIO_Init'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:63: undefined reference to `MCAL_GPIO_Init'
+Src/main.o: In function `main':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:84: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:86: undefined reference to `MCAL_GPIO_TogglePin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:87: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:90: undefined reference to `MCAL_GPIO_ReadPin'
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Src/main.c:92: undefined reference to `MCAL_GPIO_TogglePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:02:22 **** Clean-only build of configuration Debug for project Drivers ****
+make -j16 clean 
+rm -rf *
+ 
+08:02:23 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c:8:10: fatal error: STM: No such file or directory
+ #include "STM"
+          ^~~~~
+compilation terminated.
+make: *** [STM32F103C6_Drivers/MCAL/subdir.mk:18: STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:02:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.d" -MT"STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/MCAL/STM32F103C6_GPIO_Drivers.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Startup/startup_stm32f103c6tx.o: In function `LoopFillZerobss':
+D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/Debug/../Startup/startup_stm32f103c6tx.s:98: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:03:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:25:10: fatal error: STM32F103C6_GPIO_Driver.h: No such file or directory
+ #include "STM32F103C6_GPIO_Driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:03:15 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Keroll/Second term/Unit 7 (MCU Essential Peripherals )/labs final/Lesson_3_GPIO/Drivers/STM32F103C6_Drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\labs final\Lesson_3_GPIO\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+08:03:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+08:10:34 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+08:11:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+ 

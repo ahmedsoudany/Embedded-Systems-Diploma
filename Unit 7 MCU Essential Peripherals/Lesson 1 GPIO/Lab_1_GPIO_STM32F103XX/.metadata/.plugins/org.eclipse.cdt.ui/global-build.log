@@ -1,0 +1,371 @@
+13:09:55 **** Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'clock_init':
+../Src/main.c:42:1: error: expected expression before '}' token
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:11:49 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:74:14: error: unknown type name 'uint32_t'
+ void wait_ms(uint32_t time)
+              ^~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:98:5: warning: implicit declaration of function 'wait_ms' [-Wimplicit-function-declaration]
+     wait_ms(1);
+     ^~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:12:35 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'wait_ms':
+../Src/main.c:82:1: error: expected expression before '}' token
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:12:57 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-size   GPIO.elf 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+   text	   data	    bss	    dec	    hex	filename
+    860	      8	   1568	   2436	    984	GPIO.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO.bin
+ 
+Finished building: GPIO.list
+ 
+06:53:04 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    860	      8	   1568	   2436	    984	GPIO.elf
+Finished building: default.size.stdout
+ 
+06:53:55 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-size   GPIO.elf 
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+   text	   data	    bss	    dec	    hex	filename
+    860	      8	   1568	   2436	    984	GPIO.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO.hex
+ 
+07:10:52 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    844	      8	   1568	   2420	    974	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+ 
+ 
+ 
+Finished building: GPIO.list
+ 
+07:14:50 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    864	      8	   1568	   2440	    988	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+07:20:19 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    856	      8	   1568	   2432	    980	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.list
+Finished building: GPIO.bin
+ 
+ 
+ 
+ 
+07:28:07 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    900	      8	   1568	   2476	    9ac	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+07:29:03 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_input_pins':
+../Src/main.c:76:18: error: 'GPIO_ODR' undeclared (first use in this function); did you mean 'GPIOB_ODR'?
+  GPIOA_CRH = 0x0;GPIO_ODR = 0x0;
+                  ^~~~~~~~
+                  GPIOB_ODR
+../Src/main.c:76:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+07:31:54 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    924	      8	   1568	   2500	    9c4	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+07:34:44 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    924	      8	   1568	   2500	    9c4	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+07:36:28 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    924	      8	   1568	   2500	    9c4	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+ 
+Finished building: GPIO.list
+Finished building: GPIO.bin
+ 
+ 
+ 
+07:39:48 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    924	      8	   1568	   2500	    9c4	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+08:27:42 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    912	      8	   1568	   2488	    9b8	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.list
+Finished building: GPIO.bin
+ 
+ 
+ 
+ 
+08:28:30 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    900	      8	   1568	   2476	    9ac	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.list
+Finished building: GPIO.bin
+ 
+ 
+ 
+ 
+08:30:03 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:103:35: error: expected expression before '==' token
+     if((GPIOA_IDR & (1<<1)) >> 1) == 0)
+                                   ^~
+../Src/main.c:103:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if((GPIOA_IDR & (1<<1)) >> 1) == 0)
+     ^~
+../Src/main.c:103:39: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if((GPIOA_IDR & (1<<1)) >> 1) == 0)
+                                       ^
+../Src/main.c:103:39: error: expected statement before ')' token
+../Src/main.c:109:37: error: expected expression before '==' token
+     if((GPIOA_IDR & (1<<13)) >> 13) == 1) //Multi pressing
+                                     ^~
+../Src/main.c:109:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if((GPIOA_IDR & (1<<13)) >> 13) == 1) //Multi pressing
+     ^~
+../Src/main.c:109:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if((GPIOA_IDR & (1<<13)) >> 13) == 1) //Multi pressing
+                                         ^
+../Src/main.c:109:41: error: expected statement before ')' token
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:30:23 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    900	      8	   1568	   2476	    9ac	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+08:36:35 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    900	      8	   1568	   2476	    9ac	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+08:36:36 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    900	      8	   1568	   2476	    9ac	GPIO.elf
+Finished building: default.size.stdout
+ 
+08:37:43 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    884	      8	   1568	   2460	    99c	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 

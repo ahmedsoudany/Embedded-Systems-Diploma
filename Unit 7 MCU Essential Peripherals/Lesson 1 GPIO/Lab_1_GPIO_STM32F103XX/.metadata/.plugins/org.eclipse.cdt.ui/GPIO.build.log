@@ -1,0 +1,23 @@
+08:37:43 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Second term\Unit 7 (MCU Essential Peripherals )\Labs\Lab1 GPIO STM32F103XX\GPIO\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO.elf
+ 
+arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
+arm-none-eabi-objcopy  -O ihex  GPIO.elf  "GPIO.hex"
+arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
+arm-none-eabi-size   GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    884	      8	   1568	   2460	    99c	GPIO.elf
+Finished building: default.size.stdout
+Finished building: GPIO.hex
+Finished building: GPIO.bin
+Finished building: GPIO.list
+ 
+ 
+ 
+ 
+
+08:37:44 Build Finished. 0 errors, 0 warnings. (took 424ms)
+

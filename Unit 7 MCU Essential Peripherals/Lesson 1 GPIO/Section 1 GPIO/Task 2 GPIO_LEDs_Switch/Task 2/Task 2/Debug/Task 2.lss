@@ -1,0 +1,300 @@
+
+Task 2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000182  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000001d6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  000001d6  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000208  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000244  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000057e  00000000  00000000  00000264  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000508  00000000  00000000  000007e2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002a9  00000000  00000000  00000cea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00000f94  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000002ee  00000000  00000000  00000fb8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000036  00000000  00000000  000012a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  000012dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <main>
+  64:	0c 94 bf 00 	jmp	0x17e	; 0x17e <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <main>:
+#define F_CPU 8000000UL
+
+
+int main(void)
+{
+	DDRA |= 0xFF;
+  6c:	8a b3       	in	r24, 0x1a	; 26
+  6e:	8f ef       	ldi	r24, 0xFF	; 255
+  70:	8a bb       	out	0x1a, r24	; 26
+	//DDRA = 0xff;
+	uint8_t count = 0;
+	DDRB = 0x0;
+  72:	17 ba       	out	0x17, r1	; 23
+	PORTB |= (1<<0); //pull-up resistor is activated.
+  74:	88 b3       	in	r24, 0x18	; 24
+  76:	81 60       	ori	r24, 0x01	; 1
+  78:	88 bb       	out	0x18, r24	; 24
+
+int main(void)
+{
+	DDRA |= 0xFF;
+	//DDRA = 0xff;
+	uint8_t count = 0;
+  7a:	80 e0       	ldi	r24, 0x00	; 0
+	
+	/* Replace with your application code */
+	while (1)
+	{
+		
+		if ( ((PINB & 1) == 0) & (count == 0) )
+  7c:	26 b3       	in	r18, 0x16	; 22
+  7e:	91 e0       	ldi	r25, 0x01	; 1
+  80:	92 27       	eor	r25, r18
+  82:	91 70       	andi	r25, 0x01	; 1
+  84:	21 e0       	ldi	r18, 0x01	; 1
+  86:	81 11       	cpse	r24, r1
+  88:	20 e0       	ldi	r18, 0x00	; 0
+  8a:	92 23       	and	r25, r18
+  8c:	31 f0       	breq	.+12     	; 0x9a <main+0x2e>
+		{
+			PORTA |= (1<<0);
+  8e:	9b b3       	in	r25, 0x1b	; 27
+  90:	91 60       	ori	r25, 0x01	; 1
+  92:	9b bb       	out	0x1b, r25	; 27
+			count++;
+  94:	8f 5f       	subi	r24, 0xFF	; 255
+			//_delay_ms(3000);
+			while(  (PINB & 1) == 0   );
+  96:	b0 9b       	sbis	0x16, 0	; 22
+  98:	fe cf       	rjmp	.-4      	; 0x96 <main+0x2a>
+		}
+		
+		if( ((PINB & 1) == 0) & (count == 1) )
+  9a:	26 b3       	in	r18, 0x16	; 22
+  9c:	91 e0       	ldi	r25, 0x01	; 1
+  9e:	92 27       	eor	r25, r18
+  a0:	91 70       	andi	r25, 0x01	; 1
+  a2:	21 e0       	ldi	r18, 0x01	; 1
+  a4:	81 30       	cpi	r24, 0x01	; 1
+  a6:	09 f0       	breq	.+2      	; 0xaa <main+0x3e>
+  a8:	20 e0       	ldi	r18, 0x00	; 0
+  aa:	92 23       	and	r25, r18
+  ac:	31 f0       	breq	.+12     	; 0xba <main+0x4e>
+		{
+			PORTA |= (1<<1);
+  ae:	8b b3       	in	r24, 0x1b	; 27
+  b0:	82 60       	ori	r24, 0x02	; 2
+  b2:	8b bb       	out	0x1b, r24	; 27
+			count = 2;
+			//_delay_ms(5000);
+			while( ((PINB & 1) == 0) );
+  b4:	b0 9b       	sbis	0x16, 0	; 22
+  b6:	fe cf       	rjmp	.-4      	; 0xb4 <main+0x48>
+		}
+		
+		if( ((PINB & 1) == 0) & (count == 1) )
+		{
+			PORTA |= (1<<1);
+			count = 2;
+  b8:	82 e0       	ldi	r24, 0x02	; 2
+			//_delay_ms(5000);
+			while( ((PINB & 1) == 0) );
+		}
+		
+		if (((PINB & 1) == 0)  & (count == 2) )
+  ba:	26 b3       	in	r18, 0x16	; 22
+  bc:	91 e0       	ldi	r25, 0x01	; 1
+  be:	92 27       	eor	r25, r18
+  c0:	91 70       	andi	r25, 0x01	; 1
+  c2:	21 e0       	ldi	r18, 0x01	; 1
+  c4:	82 30       	cpi	r24, 0x02	; 2
+  c6:	09 f0       	breq	.+2      	; 0xca <main+0x5e>
+  c8:	20 e0       	ldi	r18, 0x00	; 0
+  ca:	92 23       	and	r25, r18
+  cc:	31 f0       	breq	.+12     	; 0xda <main+0x6e>
+		{
+			PORTA |= (1<<2);
+  ce:	9b b3       	in	r25, 0x1b	; 27
+  d0:	94 60       	ori	r25, 0x04	; 4
+  d2:	9b bb       	out	0x1b, r25	; 27
+			count++;
+  d4:	8f 5f       	subi	r24, 0xFF	; 255
+	
+			//_delay_ms(5000);
+			while(  (PINB & 1) ==0   );
+  d6:	b0 9b       	sbis	0x16, 0	; 22
+  d8:	fe cf       	rjmp	.-4      	; 0xd6 <main+0x6a>
+		}
+		if ( ((PINB & 1) == 0) & (count == 3) )
+  da:	26 b3       	in	r18, 0x16	; 22
+  dc:	91 e0       	ldi	r25, 0x01	; 1
+  de:	92 27       	eor	r25, r18
+  e0:	91 70       	andi	r25, 0x01	; 1
+  e2:	21 e0       	ldi	r18, 0x01	; 1
+  e4:	83 30       	cpi	r24, 0x03	; 3
+  e6:	09 f0       	breq	.+2      	; 0xea <main+0x7e>
+  e8:	20 e0       	ldi	r18, 0x00	; 0
+  ea:	92 23       	and	r25, r18
+  ec:	31 f0       	breq	.+12     	; 0xfa <main+0x8e>
+		{
+			PORTA |= (1<<3);
+  ee:	9b b3       	in	r25, 0x1b	; 27
+  f0:	98 60       	ori	r25, 0x08	; 8
+  f2:	9b bb       	out	0x1b, r25	; 27
+			count++;
+  f4:	8f 5f       	subi	r24, 0xFF	; 255
+			//_delay_ms(5000);
+			while(  (PINB & 1) == 0 );
+  f6:	b0 9b       	sbis	0x16, 0	; 22
+  f8:	fe cf       	rjmp	.-4      	; 0xf6 <main+0x8a>
+		}
+		if ( ((PINB & 1) == 0) & (count == 4) )
+  fa:	26 b3       	in	r18, 0x16	; 22
+  fc:	91 e0       	ldi	r25, 0x01	; 1
+  fe:	92 27       	eor	r25, r18
+ 100:	91 70       	andi	r25, 0x01	; 1
+ 102:	21 e0       	ldi	r18, 0x01	; 1
+ 104:	84 30       	cpi	r24, 0x04	; 4
+ 106:	09 f0       	breq	.+2      	; 0x10a <main+0x9e>
+ 108:	20 e0       	ldi	r18, 0x00	; 0
+ 10a:	92 23       	and	r25, r18
+ 10c:	31 f0       	breq	.+12     	; 0x11a <main+0xae>
+		{
+			PORTA |= (1<<4);
+ 10e:	9b b3       	in	r25, 0x1b	; 27
+ 110:	90 61       	ori	r25, 0x10	; 16
+ 112:	9b bb       	out	0x1b, r25	; 27
+			count++;
+ 114:	8f 5f       	subi	r24, 0xFF	; 255
+			
+			//_delay_ms(5000);
+			while(  (PINB & 1) == 0   );
+ 116:	b0 9b       	sbis	0x16, 0	; 22
+ 118:	fe cf       	rjmp	.-4      	; 0x116 <main+0xaa>
+		}
+		if  ( ((PINB & 1) == 0) & (count == 5) )
+ 11a:	26 b3       	in	r18, 0x16	; 22
+ 11c:	91 e0       	ldi	r25, 0x01	; 1
+ 11e:	92 27       	eor	r25, r18
+ 120:	91 70       	andi	r25, 0x01	; 1
+ 122:	21 e0       	ldi	r18, 0x01	; 1
+ 124:	85 30       	cpi	r24, 0x05	; 5
+ 126:	09 f0       	breq	.+2      	; 0x12a <main+0xbe>
+ 128:	20 e0       	ldi	r18, 0x00	; 0
+ 12a:	92 23       	and	r25, r18
+ 12c:	31 f0       	breq	.+12     	; 0x13a <main+0xce>
+		{
+			PORTA |= (1<<5);
+ 12e:	9b b3       	in	r25, 0x1b	; 27
+ 130:	90 62       	ori	r25, 0x20	; 32
+ 132:	9b bb       	out	0x1b, r25	; 27
+			count++;
+ 134:	8f 5f       	subi	r24, 0xFF	; 255
+			//_delay_ms(5000);
+			while(  (PINB & 1) == 0  );
+ 136:	b0 9b       	sbis	0x16, 0	; 22
+ 138:	fe cf       	rjmp	.-4      	; 0x136 <main+0xca>
+		}
+		if ( ((PINB & 1) == 0) & (count == 6) )
+ 13a:	26 b3       	in	r18, 0x16	; 22
+ 13c:	91 e0       	ldi	r25, 0x01	; 1
+ 13e:	92 27       	eor	r25, r18
+ 140:	91 70       	andi	r25, 0x01	; 1
+ 142:	21 e0       	ldi	r18, 0x01	; 1
+ 144:	86 30       	cpi	r24, 0x06	; 6
+ 146:	09 f0       	breq	.+2      	; 0x14a <main+0xde>
+ 148:	20 e0       	ldi	r18, 0x00	; 0
+ 14a:	92 23       	and	r25, r18
+ 14c:	31 f0       	breq	.+12     	; 0x15a <main+0xee>
+		{
+			PORTA |= (1<<6);
+ 14e:	9b b3       	in	r25, 0x1b	; 27
+ 150:	90 64       	ori	r25, 0x40	; 64
+ 152:	9b bb       	out	0x1b, r25	; 27
+			count++;
+ 154:	8f 5f       	subi	r24, 0xFF	; 255
+			//_delay_ms(5000);
+			while(  (PINB & 1) == 0  );
+ 156:	b0 9b       	sbis	0x16, 0	; 22
+ 158:	fe cf       	rjmp	.-4      	; 0x156 <main+0xea>
+		}
+		if ( ((PINB & 1) == 0) & (count == 7) )
+ 15a:	26 b3       	in	r18, 0x16	; 22
+ 15c:	91 e0       	ldi	r25, 0x01	; 1
+ 15e:	92 27       	eor	r25, r18
+ 160:	91 70       	andi	r25, 0x01	; 1
+ 162:	21 e0       	ldi	r18, 0x01	; 1
+ 164:	87 30       	cpi	r24, 0x07	; 7
+ 166:	09 f0       	breq	.+2      	; 0x16a <main+0xfe>
+ 168:	20 e0       	ldi	r18, 0x00	; 0
+ 16a:	92 23       	and	r25, r18
+ 16c:	09 f4       	brne	.+2      	; 0x170 <main+0x104>
+ 16e:	86 cf       	rjmp	.-244    	; 0x7c <main+0x10>
+		{
+			PORTA |= (1<<7);
+ 170:	9b b3       	in	r25, 0x1b	; 27
+ 172:	90 68       	ori	r25, 0x80	; 128
+ 174:	9b bb       	out	0x1b, r25	; 27
+			count++;
+ 176:	8f 5f       	subi	r24, 0xFF	; 255
+			//_delay_ms(5000);
+			while(  (PINB & 1) == 0  );
+ 178:	b0 9b       	sbis	0x16, 0	; 22
+ 17a:	fe cf       	rjmp	.-4      	; 0x178 <main+0x10c>
+ 17c:	7f cf       	rjmp	.-258    	; 0x7c <main+0x10>
+
+0000017e <_exit>:
+ 17e:	f8 94       	cli
+
+00000180 <__stop_program>:
+ 180:	ff cf       	rjmp	.-2      	; 0x180 <__stop_program>

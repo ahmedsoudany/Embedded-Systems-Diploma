@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Drivers/STM32F103C6_Drivers&apos; to &apos;STM_32F103C6_Drivers&apos;" description="Rename resource &apos;STM32F103C6_Drivers&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="STM32F103C6_Drivers" name="STM_32F103C6_Drivers" stamp="1700059094396" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Drivers/STM_32F103C6_Drivers&apos; to &apos;STM32F103C6_Drivers&apos;" description="Rename resource &apos;STM_32F103C6_Drivers&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="STM_32F103C6_Drivers" name="STM32F103C6_Drivers" stamp="1700059101449" updateReferences="true"/>
+</session>
