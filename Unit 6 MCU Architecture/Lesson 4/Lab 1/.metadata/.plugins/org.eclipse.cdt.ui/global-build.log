@@ -1,0 +1,220 @@
+20:26:55 **** Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:29:26: error: expected ')' before numeric constant
+ #define AFIO_Base 0x4001 0000
+                          ^
+../Src/main.c:30:49: note: in expansion of macro 'AFIO_Base'
+ #define AFIO_EXTICR1 *(volatile unsigned int *)(AFIO_Base + 0x08)
+                                                 ^~~~~~~~~
+../Src/main.c:37:2: note: in expansion of macro 'AFIO_EXTICR1'
+  AFIO_EXTICR1 = ;
+  ^~~~~~~~~~~~
+../Src/main.c:37:17: error: expected expression before ';' token
+  AFIO_EXTICR1 = ;
+                 ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:12:33 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_PIN13_output_init':
+../Src/main.c:30:28: error: expected ')' before numeric constant
+ #define EXTI_Base   0x4001 0400
+                            ^
+../Src/main.c:26:47: note: in expansion of macro 'EXTI_Base'
+ #define GPIOA_CRH  *(volatile unsigned int *)(EXTI_Base + 0x04)
+                                               ^~~~~~~~~
+../Src/main.c:45:2: note: in expansion of macro 'GPIOA_CRH'
+  GPIOA_CRH &= 0xFF0FFFFF;
+  ^~~~~~~~~
+../Src/main.c:30:28: error: expected ')' before numeric constant
+ #define EXTI_Base   0x4001 0400
+                            ^
+../Src/main.c:26:47: note: in expansion of macro 'EXTI_Base'
+ #define GPIOA_CRH  *(volatile unsigned int *)(EXTI_Base + 0x04)
+                                               ^~~~~~~~~
+../Src/main.c:46:2: note: in expansion of macro 'GPIOA_CRH'
+  GPIOA_CRH |= 0x00200000;
+  ^~~~~~~~~
+../Src/main.c: In function 'GPIO_PINO_input_init':
+../Src/main.c:30:28: error: expected ')' before numeric constant
+ #define EXTI_Base   0x4001 0400
+                            ^
+../Src/main.c:28:47: note: in expansion of macro 'EXTI_Base'
+ #define GPIOA_CRL  *(volatile unsigned int *)(EXTI_Base + 0x00) // To config the external push button
+                                               ^~~~~~~~~
+../Src/main.c:52:2: note: in expansion of macro 'GPIOA_CRL'
+  GPIOA_CRL |= (1<<2);
+  ^~~~~~~~~
+../Src/main.c: In function 'clock_init':
+../Src/main.c:38:25: error: expected ')' before numeric constant
+ #define RCC_Base 0x4002 1000
+                         ^
+../Src/main.c:39:48: note: in expansion of macro 'RCC_Base'
+ #define RCC_APB2ENR *(volatile unsigned int *)(RCC_Base + 0x18)
+                                                ^~~~~~~~
+../Src/main.c:57:2: note: in expansion of macro 'RCC_APB2ENR'
+  RCC_APB2ENR |= (1<<2)
+  ^~~~~~~~~~~
+../Src/main.c:38:25: error: expected ')' before numeric constant
+ #define RCC_Base 0x4002 1000
+                         ^
+../Src/main.c:39:48: note: in expansion of macro 'RCC_Base'
+ #define RCC_APB2ENR *(volatile unsigned int *)(RCC_Base + 0x18)
+                                                ^~~~~~~~
+../Src/main.c:60:2: note: in expansion of macro 'RCC_APB2ENR'
+  RCC_APB2ENR |= (1<<0)
+  ^~~~~~~~~~~
+../Src/main.c:39:21: error: invalid operands to binary * (have 'int' and 'volatile unsigned int *')
+ #define RCC_APB2ENR *(volatile unsigned int *)(RCC_Base + 0x18)
+                     ^
+../Src/main.c:60:2: note: in expansion of macro 'RCC_APB2ENR'
+  RCC_APB2ENR |= (1<<0)
+  ^~~~~~~~~~~
+../Src/main.c:61:1: error: expected ';' before '}' token
+ }
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:35:28: error: expected ')' before numeric constant
+ #define AFIO_Base   0x4001 0000
+                            ^
+../Src/main.c:36:49: note: in expansion of macro 'AFIO_Base'
+ #define AFIO_EXTICR1 *(volatile unsigned int *)(AFIO_Base + 0x08)
+                                                 ^~~~~~~~~
+../Src/main.c:74:2: note: in expansion of macro 'AFIO_EXTICR1'
+  AFIO_EXTICR1 = 0x0; //Select PORTA for EXTI0
+  ^~~~~~~~~~~~
+../Src/main.c:30:28: error: expected ')' before numeric constant
+ #define EXTI_Base   0x4001 0400
+                            ^
+../Src/main.c:31:47: note: in expansion of macro 'EXTI_Base'
+ #define EXTI_IMR   *(volatile unsigned int *)(EXTI_Base + 0x00)
+                                               ^~~~~~~~~
+../Src/main.c:77:2: note: in expansion of macro 'EXTI_IMR'
+  EXTI_IMR |= (1<<0); //Enable Mask EXTI0
+  ^~~~~~~~
+../Src/main.c:30:28: error: expected ')' before numeric constant
+ #define EXTI_Base   0x4001 0400
+                            ^
+../Src/main.c:32:47: note: in expansion of macro 'EXTI_Base'
+ #define EXTI_RTSR  *(volatile unsigned int *)(EXTI_Base + 0x08)
+                                               ^~~~~~~~~
+../Src/main.c:79:2: note: in expansion of macro 'EXTI_RTSR'
+  EXTI_RTSR |= (1<<0); //Enable Rising trigger Enabled
+  ^~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:94:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:12:53 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'clock_init':
+../Src/main.c:39:21: error: invalid operands to binary * (have 'int' and 'volatile unsigned int *')
+ #define RCC_APB2ENR *(volatile unsigned int *)(RCC_Base + 0x18)
+                     ^
+../Src/main.c:60:2: note: in expansion of macro 'RCC_APB2ENR'
+  RCC_APB2ENR |= (1<<0)
+  ^~~~~~~~~~~
+../Src/main.c:61:1: error: expected ';' before '}' token
+ }
+ ^
+../Src/main.c: At top level:
+../Src/main.c:94:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:13:13 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'clock_init':
+../Src/main.c:39:21: error: invalid operands to binary * (have 'int' and 'volatile unsigned int *')
+ #define RCC_APB2ENR *(volatile unsigned int *)(RCC_Base + 0x18)
+                     ^
+../Src/main.c:60:2: note: in expansion of macro 'RCC_APB2ENR'
+  RCC_APB2ENR |= (1<<0)
+  ^~~~~~~~~~~
+../Src/main.c:61:1: error: expected ';' before '}' token
+ }
+ ^
+../Src/main.c: At top level:
+../Src/main.c:94:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:13:28 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:94:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:13:54 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Interrupt_code.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\MCU Fundamental\Labs\Lesson 4\Interrupt_code\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Interrupt_code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Interrupt_code.elf
+ 
+arm-none-eabi-size   Interrupt_code.elf 
+arm-none-eabi-objdump -h -S  Interrupt_code.elf  > "Interrupt_code.list"
+arm-none-eabi-objcopy  -O binary  Interrupt_code.elf  "Interrupt_code.bin"
+   text	   data	    bss	    dec	    hex	filename
+    776	      8	   1568	   2352	    930	Interrupt_code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Interrupt_code.bin
+Finished building: Interrupt_code.list
+ 
+ 
+21:14:01 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Interrupt_code.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\MCU Fundamental\Labs\Lesson 4\Interrupt_code\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Interrupt_code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Interrupt_code.elf
+ 
+arm-none-eabi-objdump -h -S  Interrupt_code.elf  > "Interrupt_code.list"
+arm-none-eabi-objcopy  -O binary  Interrupt_code.elf  "Interrupt_code.bin"
+arm-none-eabi-size   Interrupt_code.elf 
+   text	   data	    bss	    dec	    hex	filename
+    776	      8	   1568	   2352	    930	Interrupt_code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Interrupt_code.bin
+Finished building: Interrupt_code.list
+ 
+ 
+21:14:11 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Interrupt_code.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\MCU Fundamental\Labs\Lesson 4\Interrupt_code\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Interrupt_code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Interrupt_code.elf
+ 
+arm-none-eabi-objdump -h -S  Interrupt_code.elf  > "Interrupt_code.list"
+arm-none-eabi-objcopy  -O binary  Interrupt_code.elf  "Interrupt_code.bin"
+arm-none-eabi-size   Interrupt_code.elf 
+   text	   data	    bss	    dec	    hex	filename
+    776	      8	   1568	   2352	    930	Interrupt_code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Interrupt_code.bin
+Finished building: Interrupt_code.list
+ 
+ 
+21:30:04 **** Incremental Build of configuration Debug for project Interrupt_code ****
+make -j16 all 
+arm-none-eabi-size   Interrupt_code.elf 
+   text	   data	    bss	    dec	    hex	filename
+    776	      8	   1568	   2352	    930	Interrupt_code.elf
+Finished building: default.size.stdout
+ 

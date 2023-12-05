@@ -1,0 +1,382 @@
+
+Intrerrupt_Controller_Atmega32-lab.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000001fe  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000252  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000252  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000284  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000068  00000000  00000000  000002c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000076e  00000000  00000000  00000328  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000005bb  00000000  00000000  00000a96  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000039b  00000000  00000000  00001051  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000108  00000000  00000000  000013ec  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003f6  00000000  00000000  000014f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001da  00000000  00000000  000018ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000058  00000000  00000000  00001ac4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 9a 00 	jmp	0x134	; 0x134 <__vector_1>
+   8:	0c 94 bb 00 	jmp	0x176	; 0x176 <__vector_2>
+   c:	0c 94 dc 00 	jmp	0x1b8	; 0x1b8 <__vector_3>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 5a 00 	call	0xb4	; 0xb4 <main>
+  64:	0c 94 fd 00 	jmp	0x1fa	; 0x1fa <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <GPIOB_PB2_input_init>:
+
+
+void GPIOB_PB2_input_init() //INT2 (External Interrupt 2 Input)
+{
+	//DDRB is written logic zero, Pin is configured as an input pin
+	GPIO_DDRB &= ~(1<<2);
+  6c:	87 b3       	in	r24, 0x17	; 23
+  6e:	98 b3       	in	r25, 0x18	; 24
+  70:	8b 7f       	andi	r24, 0xFB	; 251
+  72:	98 bb       	out	0x18, r25	; 24
+  74:	87 bb       	out	0x17, r24	; 23
+  76:	08 95       	ret
+
+00000078 <GPIOD_PD2_input_init>:
+}
+void GPIOD_PD2_input_init() //INT0 (External Interrupt 0 Input)
+{
+	//DDRD is written logic zero, Pin is configured as an input pin
+	GPIO_DDRD &= ~(1<<2);
+  78:	81 b3       	in	r24, 0x11	; 17
+  7a:	92 b3       	in	r25, 0x12	; 18
+  7c:	8b 7f       	andi	r24, 0xFB	; 251
+  7e:	92 bb       	out	0x12, r25	; 18
+  80:	81 bb       	out	0x11, r24	; 17
+  82:	08 95       	ret
+
+00000084 <GPIOD_PD3_input_init>:
+}
+void GPIOD_PD3_input_init() //INT1 (External Interrupt 1 Input)
+{
+	//DDRD is written logic zero, Pin is configured as an input pin
+	GPIO_DDRD &= ~(1<<3);
+  84:	81 b3       	in	r24, 0x11	; 17
+  86:	92 b3       	in	r25, 0x12	; 18
+  88:	87 7f       	andi	r24, 0xF7	; 247
+  8a:	92 bb       	out	0x12, r25	; 18
+  8c:	81 bb       	out	0x11, r24	; 17
+  8e:	08 95       	ret
+
+00000090 <GPIOD_PD5_output_init>:
+	 
+}
+void GPIOD_PD5_output_init() //INT0 (External Interrupt 0 Input)
+{
+	//DDRD is written logic zero, Pin is configured as an input pin
+	GPIO_DDRD |= (1<<5);
+  90:	81 b3       	in	r24, 0x11	; 17
+  92:	92 b3       	in	r25, 0x12	; 18
+  94:	80 62       	ori	r24, 0x20	; 32
+  96:	92 bb       	out	0x12, r25	; 18
+  98:	81 bb       	out	0x11, r24	; 17
+  9a:	08 95       	ret
+
+0000009c <GPIOD_PD6_output_init>:
+}
+void GPIOD_PD6_output_init() //INT1 (External Interrupt 1 Input)
+{
+	//DDRD is written logic zero, Pin is configured as an input pin
+	GPIO_DDRD |= (1<<6);
+  9c:	81 b3       	in	r24, 0x11	; 17
+  9e:	92 b3       	in	r25, 0x12	; 18
+  a0:	80 64       	ori	r24, 0x40	; 64
+  a2:	92 bb       	out	0x12, r25	; 18
+  a4:	81 bb       	out	0x11, r24	; 17
+  a6:	08 95       	ret
+
+000000a8 <GPIOD_PD7_output_init>:
+}
+void GPIOD_PD7_output_init() //INT1 (External Interrupt 1 Input)
+{
+	//DDRD is written logic zero, Pin is configured as an input pin
+	GPIO_DDRD |= (1<<7);
+  a8:	81 b3       	in	r24, 0x11	; 17
+  aa:	92 b3       	in	r25, 0x12	; 18
+  ac:	80 68       	ori	r24, 0x80	; 128
+  ae:	92 bb       	out	0x12, r25	; 18
+  b0:	81 bb       	out	0x11, r24	; 17
+  b2:	08 95       	ret
+
+000000b4 <main>:
+
+int main(void)
+{
+	
+	//External Interrupt Request 0 Enable
+	INT_GICR |= (1<<6);
+  b4:	8b b7       	in	r24, 0x3b	; 59
+  b6:	9c b7       	in	r25, 0x3c	; 60
+  b8:	80 64       	ori	r24, 0x40	; 64
+  ba:	9c bf       	out	0x3c, r25	; 60
+  bc:	8b bf       	out	0x3b, r24	; 59
+	//External Interrupt Request 1 Enable
+	INT_GICR |= (1<<7);
+  be:	8b b7       	in	r24, 0x3b	; 59
+  c0:	9c b7       	in	r25, 0x3c	; 60
+  c2:	80 68       	ori	r24, 0x80	; 128
+  c4:	9c bf       	out	0x3c, r25	; 60
+  c6:	8b bf       	out	0x3b, r24	; 59
+	//External Interrupt Request 2 Enable
+	INT_GICR |= (1<<5);
+  c8:	8b b7       	in	r24, 0x3b	; 59
+  ca:	9c b7       	in	r25, 0x3c	; 60
+  cc:	80 62       	ori	r24, 0x20	; 32
+  ce:	9c bf       	out	0x3c, r25	; 60
+  d0:	8b bf       	out	0x3b, r24	; 59
+	
+	//Interrupt Sense Control 0 (any logic)
+	INT_MCUCR |= (1<<0);
+  d2:	85 b7       	in	r24, 0x35	; 53
+  d4:	96 b7       	in	r25, 0x36	; 54
+  d6:	81 60       	ori	r24, 0x01	; 1
+  d8:	96 bf       	out	0x36, r25	; 54
+  da:	85 bf       	out	0x35, r24	; 53
+	//MCUCR & ~(1<<1);
+	//Interrupt Sense Control 1(rising edge)
+	INT_MCUCR |= (1<<2);
+  dc:	85 b7       	in	r24, 0x35	; 53
+  de:	96 b7       	in	r25, 0x36	; 54
+  e0:	84 60       	ori	r24, 0x04	; 4
+  e2:	96 bf       	out	0x36, r25	; 54
+  e4:	85 bf       	out	0x35, r24	; 53
+	INT_MCUCR |= (1<<3);
+  e6:	85 b7       	in	r24, 0x35	; 53
+  e8:	96 b7       	in	r25, 0x36	; 54
+  ea:	88 60       	ori	r24, 0x08	; 8
+  ec:	96 bf       	out	0x36, r25	; 54
+  ee:	85 bf       	out	0x35, r24	; 53
+	//Interrupt Sense Control 2(falling edge)
+	INT_MCUCSR &= ~(1<<6);
+  f0:	84 b7       	in	r24, 0x34	; 52
+  f2:	95 b7       	in	r25, 0x35	; 53
+  f4:	8f 7b       	andi	r24, 0xBF	; 191
+  f6:	95 bf       	out	0x35, r25	; 53
+  f8:	84 bf       	out	0x34, r24	; 52
+    
+	GPIOB_PB2_input_init();
+  fa:	0e 94 36 00 	call	0x6c	; 0x6c <GPIOB_PB2_input_init>
+	GPIOD_PD2_input_init();
+  fe:	0e 94 3c 00 	call	0x78	; 0x78 <GPIOD_PD2_input_init>
+	GPIOD_PD3_input_init();
+ 102:	0e 94 42 00 	call	0x84	; 0x84 <GPIOD_PD3_input_init>
+	GPIOD_PD5_output_init();
+ 106:	0e 94 48 00 	call	0x90	; 0x90 <GPIOD_PD5_output_init>
+	GPIOD_PD6_output_init();
+ 10a:	0e 94 4e 00 	call	0x9c	; 0x9c <GPIOD_PD6_output_init>
+	GPIOD_PD7_output_init();
+ 10e:	0e 94 54 00 	call	0xa8	; 0xa8 <GPIOD_PD7_output_init>
+	
+	//The Global Interrupt Enable bit must be set for the interrupts to be enabled
+	//INT_SREG |= (1<<7);
+    sei();
+ 112:	78 94       	sei
+	while (1) 
+    {
+		GPIO_PORTD &= ~(1<<5);
+ 114:	82 b3       	in	r24, 0x12	; 18
+ 116:	93 b3       	in	r25, 0x13	; 19
+ 118:	8f 7d       	andi	r24, 0xDF	; 223
+ 11a:	93 bb       	out	0x13, r25	; 19
+ 11c:	82 bb       	out	0x12, r24	; 18
+		GPIO_PORTD &= ~(1<<6);
+ 11e:	82 b3       	in	r24, 0x12	; 18
+ 120:	93 b3       	in	r25, 0x13	; 19
+ 122:	8f 7b       	andi	r24, 0xBF	; 191
+ 124:	93 bb       	out	0x13, r25	; 19
+ 126:	82 bb       	out	0x12, r24	; 18
+		GPIO_PORTD &= ~(1<<7);
+ 128:	82 b3       	in	r24, 0x12	; 18
+ 12a:	93 b3       	in	r25, 0x13	; 19
+ 12c:	8f 77       	andi	r24, 0x7F	; 127
+ 12e:	93 bb       	out	0x13, r25	; 19
+ 130:	82 bb       	out	0x12, r24	; 18
+ 132:	f0 cf       	rjmp	.-32     	; 0x114 <main+0x60>
+
+00000134 <__vector_1>:
+    }
+}
+
+ISR (INT0_vect)
+{
+ 134:	1f 92       	push	r1
+ 136:	0f 92       	push	r0
+ 138:	0f b6       	in	r0, 0x3f	; 63
+ 13a:	0f 92       	push	r0
+ 13c:	11 24       	eor	r1, r1
+ 13e:	2f 93       	push	r18
+ 140:	8f 93       	push	r24
+ 142:	9f 93       	push	r25
+	GPIO_PORTD |= (1<<5);
+ 144:	82 b3       	in	r24, 0x12	; 18
+ 146:	93 b3       	in	r25, 0x13	; 19
+ 148:	80 62       	ori	r24, 0x20	; 32
+ 14a:	93 bb       	out	0x13, r25	; 19
+ 14c:	82 bb       	out	0x12, r24	; 18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 14e:	2f ef       	ldi	r18, 0xFF	; 255
+ 150:	89 e6       	ldi	r24, 0x69	; 105
+ 152:	98 e1       	ldi	r25, 0x18	; 24
+ 154:	21 50       	subi	r18, 0x01	; 1
+ 156:	80 40       	sbci	r24, 0x00	; 0
+ 158:	90 40       	sbci	r25, 0x00	; 0
+ 15a:	e1 f7       	brne	.-8      	; 0x154 <__vector_1+0x20>
+ 15c:	00 c0       	rjmp	.+0      	; 0x15e <__vector_1+0x2a>
+ 15e:	00 00       	nop
+	_delay_ms(1000);
+	//Clearing the Interrupt 0 flag
+	GIFR |= (1<<6);
+ 160:	8a b7       	in	r24, 0x3a	; 58
+ 162:	80 64       	ori	r24, 0x40	; 64
+ 164:	8a bf       	out	0x3a, r24	; 58
+}
+ 166:	9f 91       	pop	r25
+ 168:	8f 91       	pop	r24
+ 16a:	2f 91       	pop	r18
+ 16c:	0f 90       	pop	r0
+ 16e:	0f be       	out	0x3f, r0	; 63
+ 170:	0f 90       	pop	r0
+ 172:	1f 90       	pop	r1
+ 174:	18 95       	reti
+
+00000176 <__vector_2>:
+ISR (INT1_vect)
+{
+ 176:	1f 92       	push	r1
+ 178:	0f 92       	push	r0
+ 17a:	0f b6       	in	r0, 0x3f	; 63
+ 17c:	0f 92       	push	r0
+ 17e:	11 24       	eor	r1, r1
+ 180:	2f 93       	push	r18
+ 182:	8f 93       	push	r24
+ 184:	9f 93       	push	r25
+	GPIO_PORTD |= (1<<6);
+ 186:	82 b3       	in	r24, 0x12	; 18
+ 188:	93 b3       	in	r25, 0x13	; 19
+ 18a:	80 64       	ori	r24, 0x40	; 64
+ 18c:	93 bb       	out	0x13, r25	; 19
+ 18e:	82 bb       	out	0x12, r24	; 18
+ 190:	2f ef       	ldi	r18, 0xFF	; 255
+ 192:	89 e6       	ldi	r24, 0x69	; 105
+ 194:	98 e1       	ldi	r25, 0x18	; 24
+ 196:	21 50       	subi	r18, 0x01	; 1
+ 198:	80 40       	sbci	r24, 0x00	; 0
+ 19a:	90 40       	sbci	r25, 0x00	; 0
+ 19c:	e1 f7       	brne	.-8      	; 0x196 <__vector_2+0x20>
+ 19e:	00 c0       	rjmp	.+0      	; 0x1a0 <__vector_2+0x2a>
+ 1a0:	00 00       	nop
+	_delay_ms(1000);
+	//Clearing the Interrupt 1 flag
+	GIFR |= (1<<7);
+ 1a2:	8a b7       	in	r24, 0x3a	; 58
+ 1a4:	80 68       	ori	r24, 0x80	; 128
+ 1a6:	8a bf       	out	0x3a, r24	; 58
+	}
+ 1a8:	9f 91       	pop	r25
+ 1aa:	8f 91       	pop	r24
+ 1ac:	2f 91       	pop	r18
+ 1ae:	0f 90       	pop	r0
+ 1b0:	0f be       	out	0x3f, r0	; 63
+ 1b2:	0f 90       	pop	r0
+ 1b4:	1f 90       	pop	r1
+ 1b6:	18 95       	reti
+
+000001b8 <__vector_3>:
+ISR (INT2_vect)
+{
+ 1b8:	1f 92       	push	r1
+ 1ba:	0f 92       	push	r0
+ 1bc:	0f b6       	in	r0, 0x3f	; 63
+ 1be:	0f 92       	push	r0
+ 1c0:	11 24       	eor	r1, r1
+ 1c2:	2f 93       	push	r18
+ 1c4:	8f 93       	push	r24
+ 1c6:	9f 93       	push	r25
+	GPIO_PORTD |= (1<<7);
+ 1c8:	82 b3       	in	r24, 0x12	; 18
+ 1ca:	93 b3       	in	r25, 0x13	; 19
+ 1cc:	80 68       	ori	r24, 0x80	; 128
+ 1ce:	93 bb       	out	0x13, r25	; 19
+ 1d0:	82 bb       	out	0x12, r24	; 18
+ 1d2:	2f ef       	ldi	r18, 0xFF	; 255
+ 1d4:	89 e6       	ldi	r24, 0x69	; 105
+ 1d6:	98 e1       	ldi	r25, 0x18	; 24
+ 1d8:	21 50       	subi	r18, 0x01	; 1
+ 1da:	80 40       	sbci	r24, 0x00	; 0
+ 1dc:	90 40       	sbci	r25, 0x00	; 0
+ 1de:	e1 f7       	brne	.-8      	; 0x1d8 <__vector_3+0x20>
+ 1e0:	00 c0       	rjmp	.+0      	; 0x1e2 <__vector_3+0x2a>
+ 1e2:	00 00       	nop
+	_delay_ms(1000);
+	//Clearing the Interrupt 2 flag
+	GIFR |= (1<<5);
+ 1e4:	8a b7       	in	r24, 0x3a	; 58
+ 1e6:	80 62       	ori	r24, 0x20	; 32
+ 1e8:	8a bf       	out	0x3a, r24	; 58
+ 1ea:	9f 91       	pop	r25
+ 1ec:	8f 91       	pop	r24
+ 1ee:	2f 91       	pop	r18
+ 1f0:	0f 90       	pop	r0
+ 1f2:	0f be       	out	0x3f, r0	; 63
+ 1f4:	0f 90       	pop	r0
+ 1f6:	1f 90       	pop	r1
+ 1f8:	18 95       	reti
+
+000001fa <_exit>:
+ 1fa:	f8 94       	cli
+
+000001fc <__stop_program>:
+ 1fc:	ff cf       	rjmp	.-2      	; 0x1fc <__stop_program>

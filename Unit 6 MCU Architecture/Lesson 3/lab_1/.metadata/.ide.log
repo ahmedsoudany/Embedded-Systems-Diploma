@@ -1,0 +1,1602 @@
+2023-09-14 13:09:58,967 [INFO] Activator:178 - 
+
+
+2023-09-14 13:09:58,967 [INFO] Activator:179 - !SESSION log4j initialized
+2023-09-14 13:11:43,167 [INFO] ApplicationProperties:181 - Using Application install path: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2023-09-14 13:11:43,178 [INFO] DbMcusXml:70 - Set database path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2023-09-14 13:11:43,181 [INFO] DbBoardsPdsc:56 - Set plugin database path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2023-09-14 13:11:43,181 [INFO] DbMcus:258 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,181 [INFO] DbBoards:264 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,183 [INFO] DbExamples:326 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,192 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,194 [INFO] DbMcusJson:63 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,194 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,194 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,200 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-09-14 13:11:43,200 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,287 [INFO] RulesReader:52 - Compatibility file has been processed (209 Rules)
+2023-09-14 13:11:43,358 [INFO] MicroXplorer:564 - Detected Java Version = 1.8.0_252
+2023-09-14 13:11:43,358 [INFO] DbMcusXml:70 - Set database path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2023-09-14 13:11:43,358 [INFO] DbBoardsPdsc:56 - Set plugin database path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2023-09-14 13:11:43,360 [INFO] DbMcus:258 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,360 [INFO] DbBoards:264 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,360 [INFO] DbExamples:326 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,360 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,360 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,360 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,360 [INFO] DbMcusJson:63 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,361 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,361 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,361 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,361 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,361 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,361 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,361 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-09-14 13:11:43,361 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,361 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,412 [INFO] MainPanel:189 - HeapMemory: 652214272
+2023-09-14 13:11:43,485 [INFO] DbMcusXml:70 - Set database path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/
+2023-09-14 13:11:43,485 [INFO] DbBoardsPdsc:56 - Set plugin database path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/boardmanager/
+2023-09-14 13:11:43,485 [INFO] DbMcus:258 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,485 [INFO] DbBoards:264 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,485 [INFO] DbExamples:326 - Set plugin images path to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [INFO] DbMcusJson:63 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-09-14 13:11:43,485 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\LEGION\.stmcufinder\plugins\mcufinder/ => C:\Users\LEGION\.stmcufinder\plugins\mcufinder
+2023-09-14 13:11:43,485 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\LEGION\.stmcufinder\plugins\mcufinder//mcu/
+2023-09-14 13:11:43,511 [INFO] ApplicationProperties:181 - Using Application install path: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2023-09-14 13:11:43,511 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2023-09-14 13:11:43,511 [INFO] PluginManage:292 - Check plugin analytics
+2023-09-14 13:11:43,628 [INFO] AnalyticsPlugin:203 - Accepted Software Licenses: 
+2023-09-14 13:11:43,628 [INFO] AnalyticsPlugin:205 - Accepted CMSIS Pack Licenses: 
+2023-09-14 13:11:43,628 [INFO] AnalyticsPlugin:207 - Accepted Firmware Licenses: 
+2023-09-14 13:11:43,628 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-09-14 13:11:43,628 [INFO] PluginManage:292 - Check plugin clock
+2023-09-14 13:11:43,643 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2023-09-14 13:11:43,643 [INFO] PluginManage:292 - Check plugin ddr
+2023-09-14 13:11:43,651 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-09-14 13:11:43,651 [INFO] PluginManage:292 - Check plugin filemanager
+2023-09-14 13:11:43,738 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-09-14 13:11:43,738 [INFO] PluginManage:292 - Check plugin ipmanager
+2023-09-14 13:11:43,738 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-09-14 13:11:43,738 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2023-09-14 13:11:43,753 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-09-14 13:11:43,753 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2023-09-14 13:11:43,795 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-09-14 13:11:43,795 [INFO] PluginManage:292 - Check plugin power
+2023-09-14 13:11:43,801 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2023-09-14 13:11:43,801 [INFO] PluginManage:292 - Check plugin projectmanager
+2023-09-14 13:11:43,825 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-09-14 13:11:43,825 [INFO] PluginManage:292 - Check plugin thirdparty
+2023-09-14 13:11:43,947 [INFO] ThirdPartyDb:333 - Open Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 50 ms. number of Sw pack : 30
+2023-09-14 13:11:43,951 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-09-14 13:11:43,951 [INFO] PluginManage:292 - Check plugin tools
+2023-09-14 13:11:43,990 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2023-09-14 13:11:43,990 [INFO] PluginManage:292 - Check plugin tutovideos
+2023-09-14 13:11:44,240 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-09-14 13:11:44,240 [INFO] PluginManage:292 - Check plugin updater
+2023-09-14 13:11:44,251 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2023-09-14 13:11:44,252 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2023-09-14 13:11:44,385 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2023-09-14 13:11:44,469 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,469 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2023-09-14 13:11:44,499 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,499 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2023-09-14 13:11:44,533 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,533 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2023-09-14 13:11:44,563 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,563 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2023-09-14 13:11:44,599 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,599 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2023-09-14 13:11:44,626 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,626 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2023-09-14 13:11:44,633 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,633 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2023-09-14 13:11:44,660 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,660 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2023-09-14 13:11:44,708 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,708 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2023-09-14 13:11:44,723 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,724 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2023-09-14 13:11:44,738 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,738 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2023-09-14 13:11:44,803 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,803 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2023-09-14 13:11:44,898 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,898 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2023-09-14 13:11:44,912 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,912 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2023-09-14 13:11:44,960 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,960 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2023-09-14 13:11:44,992 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:44,992 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2023-09-14 13:11:45,039 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,039 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2023-09-14 13:11:45,087 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,087 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2023-09-14 13:11:45,087 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,087 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2023-09-14 13:11:45,120 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,120 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2023-09-14 13:11:45,136 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,136 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2023-09-14 13:11:45,150 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,150 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2023-09-14 13:11:45,181 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,181 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2023-09-14 13:11:45,228 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,228 [INFO] PluginManager:200 - loadIPPluginJar : add openamp
+2023-09-14 13:11:45,262 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,262 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2023-09-14 13:11:45,278 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,278 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2023-09-14 13:11:45,307 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,307 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2023-09-14 13:11:45,307 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,307 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2023-09-14 13:11:45,356 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,356 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2023-09-14 13:11:45,390 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,390 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2023-09-14 13:11:45,436 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,436 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2023-09-14 13:11:45,452 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,452 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2023-09-14 13:11:45,499 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,499 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2023-09-14 13:11:45,535 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,535 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2023-09-14 13:11:45,561 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,561 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2023-09-14 13:11:45,577 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,577 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2023-09-14 13:11:45,611 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,611 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2023-09-14 13:11:45,642 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2023-09-14 13:11:45,642 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2023-09-14 13:11:46,259 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: null
+2023-09-14 13:11:46,889 [FATAL] Updater:282 - Updater called before beeing initialized
+2023-09-14 13:11:47,087 [FATAL] Updater:282 - Updater called before beeing initialized
+2023-09-14 13:11:47,087 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2023-09-14 13:11:47,087 [INFO] ThirdParty:777 - entering critical section [close project]
+2023-09-14 13:11:47,087 [INFO] ThirdParty:790 - exiting critical section [close project]
+2023-09-14 13:11:47,087 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2023-09-14 13:11:47,087 [FATAL] Updater:282 - Updater called before beeing initialized
+2023-09-14 13:11:47,095 [ERROR] Updater:967 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2023-09-14 13:11:47,095 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2023-09-14 13:11:47,112 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin\STM32_Programmer_CLI.exe -l
+2023-09-14 13:11:47,443 [INFO] MainDdrPanel:49 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2023-09-14 13:11:47,522 [INFO] Updater:904 - Updater Version found : 6.0.0
+2023-09-14 13:11:47,538 [INFO] ApplicationProperties:181 - Using Application install path: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824
+2023-09-14 13:11:47,811 [INFO] MainUpdater:2268 - connection check result : 10
+2023-09-14 13:11:47,811 [INFO] MainUpdater:2935 - Updater definition file requires update
+2023-09-14 13:11:47,811 [INFO] MainUpdater:239 - Updater Check For Update Now.
+2023-09-14 13:11:47,811 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2023-09-14 13:11:47,883 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2023-09-14 13:11:48,017 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2023-09-14 13:11:48,017 [INFO] FileExtend:240 - Standard Zip Deflate
+2023-09-14 13:11:48,490 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2023-09-14 13:11:48,607 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2023-09-14 13:11:48,937 [INFO] ServerAccessManage:348 - Download File STMicroelectronics.FP-SNS-SMARTAG2.pdsc
+2023-09-14 13:11:49,340 [INFO] ServerAccessManage:348 - Download File STMicroelectronics.X-CUBE-NFC6.pdsc
+2023-09-14 13:11:49,957 [WARN] IntegrityCheckThread:61 - waiting for thirdparty lock release [integrity check]
+2023-09-14 13:11:49,957 [INFO] IntegrityCheckThread:63 - entering critical section [integrity check]
+2023-09-14 13:11:49,959 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-09-14 13:11:50,417 [ERROR] ServerAccessManage:954 - Problem, Http access forbiden
+2023-09-14 13:11:50,417 [ERROR] ServerAccessManage:517 - Problem, Http access forbiden : RoweBots.I-CUBE-UNISONRTOS.pdsc.
+2023-09-14 13:11:50,515 [WARN] PopulateThirdPartyThread:96 - Error when creating pack: C:/Users/LEGION/.stm32cubemx/thirdparties/pdsc/STMicroelectronics.FP-SNS-SMARTAG2.pdsc
+2023-09-14 13:11:50,549 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2023-09-14 13:11:50,576 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:11:50,608 [INFO] MainUpdater:2268 - connection check result : 10
+2023-09-14 13:11:50,620 [INFO] PopulateThirdPartyThread:50 - Ending populate Thread
+2023-09-14 13:11:50,620 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:11:50,698 [INFO] Engine:289 - softwarePackList size : 31
+2023-09-14 13:11:50,729 [INFO] Engine:301 - compute dependency for SwPack FP-ATR-ASTRA1 have been done, and update is requested
+2023-09-14 13:11:50,759 [INFO] Engine:301 - compute dependency for SwPack FP-ATR-SIGFOX1 have been done, and update is requested
+2023-09-14 13:11:50,779 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2023-09-14 13:11:50,798 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-ALS have been done, and update is requested
+2023-09-14 13:11:50,818 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-BLE1 have been done, and update is requested
+2023-09-14 13:11:50,838 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-BLE2 have been done, and update is requested
+2023-09-14 13:11:50,861 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-BLEMGR have been done, and update is requested
+2023-09-14 13:11:50,876 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-EEPRMA1 have been done, and update is requested
+2023-09-14 13:11:50,892 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2023-09-14 13:11:50,908 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-ISPU have been done, and update is requested
+2023-09-14 13:11:50,926 [INFO] ServerAccessManage:348 - Download File mcusDocs.json._tmp_
+2023-09-14 13:11:51,021 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:11:51,116 [INFO] ServerAccessManage:348 - Download File mcusFeaturesAndDescription.json._tmp_
+2023-09-14 13:11:51,291 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-MEMS1 have been done, and update is requested
+2023-09-14 13:11:51,305 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2023-09-14 13:11:51,321 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-NFC7 have been done, and update is requested
+2023-09-14 13:11:51,339 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-SFXS2LP1 have been done, and update is requested
+2023-09-14 13:11:51,359 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-SUBG2 have been done, and update is requested
+2023-09-14 13:11:51,374 [INFO] Engine:305 - compute dependency for SwPack X-CUBE-TOUCHGFX have been done, no update is requested
+2023-09-14 13:11:51,376 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-ALGOBUILD have been done, and update is requested
+2023-09-14 13:11:51,384 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-H7 have been done, and update is requested
+2023-09-14 13:11:51,384 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-F4 have been done, and update is requested
+2023-09-14 13:11:51,404 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-F7 have been done, and update is requested
+2023-09-14 13:11:51,416 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-L4 have been done, and update is requested
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,425 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,427 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,428 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,428 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,428 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,428 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,428 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:11:51,428 [INFO] Engine:305 - compute dependency for SwPack X-CUBE-AZRTOS-L5 have been done, no update is requested
+2023-09-14 13:11:51,430 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-G0 have been done, and update is requested
+2023-09-14 13:11:51,441 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-G4 have been done, and update is requested
+2023-09-14 13:11:51,448 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-WB have been done, and update is requested
+2023-09-14 13:11:51,456 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-WL have been done, and update is requested
+2023-09-14 13:11:51,467 [INFO] Engine:301 - compute dependency for SwPack I-CUBE-wolfSSL have been done, and update is requested
+2023-09-14 13:11:51,629 [INFO] Engine:301 - compute dependency for SwPack I-CUBE-embOS have been done, and update is requested
+2023-09-14 13:11:51,638 [INFO] Engine:301 - compute dependency for SwPack I-Cube-SoM-uGOAL have been done, and update is requested
+2023-09-14 13:11:51,643 [INFO] Engine:301 - compute dependency for SwPack I-CUBE-Cesium have been done, and update is requested
+2023-09-14 13:11:51,652 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-NFC6 have been done, and update is requested
+2023-09-14 13:11:51,660 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:11:51,674 [INFO] LoadServerUpdatesThread:309 - End of LoadServerUpdate Thread
+2023-09-14 13:11:52,967 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-09-14 13:11:53,660 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:11:53,725 [INFO] ServerAccessManage:348 - Download File boardsDocs.json._tmp_
+2023-09-14 13:11:53,754 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:11:53,835 [INFO] ServerAccessManage:348 - Download File boards.json._tmp_
+2023-09-14 13:11:53,987 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:11:54,296 [INFO] ServerAccessManage:348 - Download File cube-finder-db.zip
+2023-09-14 13:11:55,972 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-09-14 13:11:58,975 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-09-14 13:12:01,990 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-09-14 13:12:04,187 [INFO] FileExtend:225 - Unzip File : cube-finder-db.zip
+2023-09-14 13:12:04,188 [INFO] FileExtend:240 - Standard Zip Deflate
+2023-09-14 13:12:04,779 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:12:04,994 [WARN] MainUpdater:1087 - Updater busy. Cannot search thirdparties
+2023-09-14 13:12:05,197 [INFO] ServerAccessManage:348 - Download File crdb.zip
+2023-09-14 13:12:05,548 [INFO] FileExtend:225 - Unzip File : crdb.zip
+2023-09-14 13:12:05,550 [INFO] FileExtend:240 - Standard Zip Deflate
+2023-09-14 13:12:05,591 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:12:05,910 [INFO] ServerAccessManage:348 - Download File tutoVideoDB.zip
+2023-09-14 13:12:05,980 [INFO] FileExtend:225 - Unzip File : tutoVideoDB.zip
+2023-09-14 13:12:05,981 [INFO] FileExtend:240 - Standard Zip Deflate
+2023-09-14 13:12:06,002 [INFO] LoadUrlFilesThread:135 - End of LoadUrlFiles Thread
+2023-09-14 13:12:06,026 [INFO] DbMcusDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:06,027 [INFO] DbMcusXml:100 - Load MCU database from D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2023-09-14 13:12:06,719 [INFO] DbMcusJson:92 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:07,785 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1911 are visible in CubeMX)
+2023-09-14 13:12:07,785 [INFO] ApiDb:192 - User favorites file not found: C:\Users\LEGION/.stm32cubemx/favorites.mcus.txt
+2023-09-14 13:12:07,785 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2023-09-14 13:12:08,032 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2023-09-14 13:12:08,054 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2023-09-14 13:12:08,055 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2023-09-14 13:12:08,055 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2023-09-14 13:12:08,055 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2023-09-14 13:12:08,055 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2023-09-14 13:12:08,096 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2023-09-14 13:12:08,097 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2023-09-14 13:12:08,097 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2023-09-14 13:12:08,097 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2023-09-14 13:12:08,097 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2023-09-14 13:12:08,097 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2023-09-14 13:12:08,097 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2023-09-14 13:12:08,097 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,135 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,179 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,190 [INFO] DbMcusDocs:81 - Found 682 MCUs documents
+2023-09-14 13:12:08,192 [INFO] ApiDb:226 - Save user favorites file C:\Users\LEGION/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2023-09-14 13:12:08,192 [INFO] ApiDb:230 - User favorites MCUs=[]
+2023-09-14 13:12:08,193 [INFO] DbMcusXml:100 - Load MCU database from D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/mcu/families.xml
+2023-09-14 13:12:08,220 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,267 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,316 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,368 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,422 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,460 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,511 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,534 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:08,577 [INFO] Engine:289 - softwarePackList size : 44
+2023-09-14 13:12:08,578 [INFO] Engine:301 - compute dependency for SwPack FP-ATR-ASTRA1 have been done, and update is requested
+2023-09-14 13:12:08,588 [INFO] Engine:301 - compute dependency for SwPack FP-ATR-SIGFOX1 have been done, and update is requested
+2023-09-14 13:12:08,595 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2023-09-14 13:12:08,605 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-ALS have been done, and update is requested
+2023-09-14 13:12:08,615 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-BLE1 have been done, and update is requested
+2023-09-14 13:12:08,622 [INFO] DbMcusJson:92 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:08,624 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-BLE2 have been done, and update is requested
+2023-09-14 13:12:08,651 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-BLEMGR have been done, and update is requested
+2023-09-14 13:12:08,662 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-EEPRMA1 have been done, and update is requested
+2023-09-14 13:12:08,668 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2023-09-14 13:12:08,677 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-ISPU have been done, and update is requested
+2023-09-14 13:12:09,020 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1911 are visible in CubeMX)
+2023-09-14 13:12:09,020 [INFO] ApiDb:201 - Load user favorites file C:\Users\LEGION/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2023-09-14 13:12:09,020 [INFO] ApiDb:205 - User favorites MCUs=[]
+2023-09-14 13:12:09,021 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2023-09-14 13:12:09,027 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:09,051 [INFO] DbBoardsPdsc:94 - Found 23 items
+2023-09-14 13:12:09,060 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-MEMS1 have been done, and update is requested
+2023-09-14 13:12:09,061 [INFO] DbBoardsPdsc:94 - Found 9 items
+2023-09-14 13:12:09,067 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2023-09-14 13:12:09,073 [INFO] DbBoardsPdsc:94 - Found 29 items
+2023-09-14 13:12:09,075 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-NFC7 have been done, and update is requested
+2023-09-14 13:12:09,081 [INFO] DbBoardsPdsc:94 - Found 1 items
+2023-09-14 13:12:09,087 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-SFXS2LP1 have been done, and update is requested
+2023-09-14 13:12:09,094 [INFO] DbBoardsPdsc:94 - Found 44 items
+2023-09-14 13:12:09,108 [INFO] DbBoardsPdsc:94 - Found 40 items
+2023-09-14 13:12:09,114 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-SUBG2 have been done, and update is requested
+2023-09-14 13:12:09,118 [INFO] Engine:305 - compute dependency for SwPack X-CUBE-TOUCHGFX have been done, no update is requested
+2023-09-14 13:12:09,119 [INFO] DbBoardsPdsc:94 - Found 2 items
+2023-09-14 13:12:09,120 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-ALGOBUILD have been done, and update is requested
+2023-09-14 13:12:09,128 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-H7 have been done, and update is requested
+2023-09-14 13:12:09,129 [INFO] DbBoardsPdsc:94 - Found 4 items
+2023-09-14 13:12:09,134 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2023-09-14 13:12:09,134 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2023-09-14 13:12:09,136 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2023-09-14 13:12:09,136 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2023-09-14 13:12:09,136 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2023-09-14 13:12:09,137 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-F4 have been done, and update is requested
+2023-09-14 13:12:09,173 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-F7 have been done, and update is requested
+2023-09-14 13:12:09,175 [INFO] DbBoardsJson:85 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:09,184 [INFO] DbBoards:117 - Found 166 boards (149 are supported by CubeMX)
+2023-09-14 13:12:09,187 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:09,187 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-L4 have been done, and update is requested
+2023-09-14 13:12:09,195 [INFO] DbBoardsDocs:81 - Found 209 boards documents
+2023-09-14 13:12:09,195 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,195 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,195 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,196 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,197 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,198 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,199 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,199 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,199 [INFO] Engine:305 - compute dependency for SwPack X-CUBE-AZRTOS-L5 have been done, no update is requested
+2023-09-14 13:12:09,198 [WARN] DbBoards:127 - board NUCLEO-H743ZI has no document id list !
+2023-09-14 13:12:09,200 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2023-09-14 13:12:09,200 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2023-09-14 13:12:09,200 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2023-09-14 13:12:09,200 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2023-09-14 13:12:09,200 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2023-09-14 13:12:09,200 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2023-09-14 13:12:09,201 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2023-09-14 13:12:09,201 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2023-09-14 13:12:09,201 [WARN] DbBoards:127 - board STEVAL-STWINKT1B has no document id list !
+2023-09-14 13:12:09,201 [WARN] DbBoards:127 - board STM32439I-EVAL2 has no document id list !
+2023-09-14 13:12:09,202 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2023-09-14 13:12:09,202 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2023-09-14 13:12:09,203 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2023-09-14 13:12:09,203 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2023-09-14 13:12:09,203 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2023-09-14 13:12:09,203 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-G0 have been done, and update is requested
+2023-09-14 13:12:09,204 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2023-09-14 13:12:09,204 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2023-09-14 13:12:09,216 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-G4 have been done, and update is requested
+2023-09-14 13:12:09,230 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-WB have been done, and update is requested
+2023-09-14 13:12:09,236 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-AZRTOS-WL have been done, and update is requested
+2023-09-14 13:12:09,245 [INFO] Engine:301 - compute dependency for SwPack I-CUBE-wolfSSL have been done, and update is requested
+2023-09-14 13:12:09,321 [ERROR] DbBoards:189 - Image file not found for board B-L462E-CELL1: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/B-L462E-CELL1_small.jpg
+2023-09-14 13:12:09,373 [INFO] Engine:301 - compute dependency for SwPack I-CUBE-embOS have been done, and update is requested
+2023-09-14 13:12:09,380 [INFO] Engine:301 - compute dependency for SwPack I-Cube-SoM-uGOAL have been done, and update is requested
+2023-09-14 13:12:09,386 [INFO] Engine:301 - compute dependency for SwPack I-CUBE-Cesium have been done, and update is requested
+2023-09-14 13:12:09,395 [INFO] Engine:301 - compute dependency for SwPack X-CUBE-NFC6 have been done, and update is requested
+2023-09-14 13:12:09,403 [INFO] Engine:305 - compute dependency for SwPack FreeRTOS have been done, no update is requested
+2023-09-14 13:12:09,403 [INFO] Engine:305 - compute dependency for SwPack lwIP have been done, no update is requested
+2023-09-14 13:12:09,403 [INFO] Engine:305 - compute dependency for SwPack lwIP have been done, no update is requested
+2023-09-14 13:12:09,404 [INFO] Engine:305 - compute dependency for SwPack MBEDTLS have been done, no update is requested
+2023-09-14 13:12:09,404 [INFO] Engine:305 - compute dependency for SwPack MBEDTLS have been done, no update is requested
+2023-09-14 13:12:09,404 [INFO] Engine:305 - compute dependency for SwPack PDM2PCM have been done, no update is requested
+2023-09-14 13:12:09,404 [INFO] Engine:305 - compute dependency for SwPack PDM2PCM have been done, no update is requested
+2023-09-14 13:12:09,404 [INFO] Engine:305 - compute dependency for SwPack PDM2PCM have been done, no update is requested
+2023-09-14 13:12:09,406 [INFO] Engine:305 - compute dependency for SwPack USB_DEVICE have been done, no update is requested
+2023-09-14 13:12:09,406 [INFO] Engine:305 - compute dependency for SwPack USB_DEVICE have been done, no update is requested
+2023-09-14 13:12:09,406 [INFO] Engine:305 - compute dependency for SwPack USB_DEVICE have been done, no update is requested
+2023-09-14 13:12:09,408 [INFO] Engine:305 - compute dependency for SwPack USB_HOST have been done, no update is requested
+2023-09-14 13:12:09,408 [INFO] Engine:305 - compute dependency for SwPack USB_HOST have been done, no update is requested
+2023-09-14 13:12:09,460 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376677072]
+2023-09-14 13:12:09,460 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : AstraAppCondition id : 1693376676972
+2023-09-14 13:12:09,464 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376677163]
+2023-09-14 13:12:09,465 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : FP-ATR-SIGFOX1 application condition id : 1693376677099
+2023-09-14 13:12:09,473 [ERROR] DbBoards:189 - Image file not found for board B-U585I-IOT02A: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/B-U585I-IOT02A_small.jpg
+2023-09-14 13:12:09,475 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.7.0.0: no header file found
+2023-09-14 13:12:09,475 [WARN] ApiManager:274 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.3.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'Board Extension:PGEEZ1' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'Board Part:M24' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'Board Part:M95' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'Board Part:M95P32' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'PGEEZ1:SPI' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,477 [WARN] ApiManager:274 - Cannot register API 'PGEEZ1:QDSPI' from pack STMicroelectronics.X-CUBE-EEPRMA1.4.1.0: no header file found
+2023-09-14 13:12:09,479 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376679154]
+2023-09-14 13:12:09,479 [INFO] ThirdPartyModel:556 - Component with status : MCU_INCOMPATIBLE for condition : Teseo LIV3F ThreadX Condition id : 1693376678972
+2023-09-14 13:12:09,479 [WARN] ApiManager:274 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2023-09-14 13:12:09,479 [WARN] ApiManager:274 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2023-09-14 13:12:09,479 [WARN] ApiManager:274 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2023-09-14 13:12:09,539 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.9.6.0: no header file found
+2023-09-14 13:12:09,539 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.9.6.0: no header file found
+2023-09-14 13:12:09,539 [WARN] ApiManager:274 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.9.6.0: no header file found
+2023-09-14 13:12:09,539 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.3.0.0: no header file found
+2023-09-14 13:12:09,541 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC07A1' from pack STMicroelectronics.X-CUBE-NFC7.1.0.1: no header file found
+2023-09-14 13:12:09,541 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2023-09-14 13:12:09,541 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2023-09-14 13:12:09,542 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2023-09-14 13:12:09,542 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2023-09-14 13:12:09,543 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2023-09-14 13:12:09,543 [WARN] ApiManager:274 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,545 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,547 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,548 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,549 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,552 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,553 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,554 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,555 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,556 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,556 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,556 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,556 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,556 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,556 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,557 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,557 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,557 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,557 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,557 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,557 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,558 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,559 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,560 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,561 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,562 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,563 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,564 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,564 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,565 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,566 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,568 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,569 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,570 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,571 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,572 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,573 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,574 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,575 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,576 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,577 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,579 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,580 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,580 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,580 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,580 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,580 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,580 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,581 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,582 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,583 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,585 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,585 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,585 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,585 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,585 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,586 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,587 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,587 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,587 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,587 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,587 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,587 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,588 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,589 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,590 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,591 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,592 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,592 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,592 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,592 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,593 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,594 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,595 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,596 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,597 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,598 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,599 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,599 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,599 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,599 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,599 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,599 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,600 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,602 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,603 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,604 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,605 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,605 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,605 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,605 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,606 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,607 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,608 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,609 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,610 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,611 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-F413ZH: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-f413zh_small.jpg
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,611 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,612 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,613 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,613 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,614 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,615 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,616 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,617 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,618 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,619 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,619 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,619 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,619 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,621 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,622 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,623 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,624 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,624 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,624 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,624 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,624 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,624 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,625 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,626 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,626 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,626 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,626 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,626 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,627 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,628 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,629 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,630 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,632 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,632 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,632 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376738284]
+2023-09-14 13:12:09,633 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737845]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,634 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737800]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,635 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,636 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,637 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,637 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,637 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737741]
+2023-09-14 13:12:09,637 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,637 [INFO] DependencyParser:915 - This component is not compatible with the current MCU : [1693376737709]
+2023-09-14 13:12:09,641 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC06A1' from pack STMicroelectronics.X-CUBE-NFC6.3.0.0: no header file found
+2023-09-14 13:12:09,641 [WARN] ApiManager:274 - Cannot register API 'Board Extension:NFC08A1' from pack STMicroelectronics.X-CUBE-NFC6.3.0.0: no header file found
+2023-09-14 13:12:09,641 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2023-09-14 13:12:09,642 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:09,671 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:09,736 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,736 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,737 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,739 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,739 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,739 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,739 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,739 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,739 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,741 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,742 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,743 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,743 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,743 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,743 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,744 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,744 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,744 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,744 [ERROR] DependencyParser:1297 - StateRcvOpen_Cte Bad Token : )
+2023-09-14 13:12:09,810 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-L552ZE-Q: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo_l552ze_q_small.jpg
+2023-09-14 13:12:09,810 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-U575ZI-Q: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-u575zi-q_small.jpg
+2023-09-14 13:12:09,810 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WB15CC: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wb15cc_small.jpg
+2023-09-14 13:12:09,810 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WB55RG: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wb55rg_small.jpg
+2023-09-14 13:12:09,810 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WL55JC: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wl55jc-small.jpg
+2023-09-14 13:12:09,831 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,831 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,832 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,833 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,835 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,835 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,835 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,835 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,835 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,836 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,837 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,837 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,837 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,837 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,838 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,839 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,839 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,839 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,839 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,840 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,840 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,840 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,845 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,845 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,846 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,846 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,846 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,846 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,846 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:09,846 [ERROR] DependencyParser:1263 - StateInit_Cte Bad Token :  
+2023-09-14 13:12:10,042 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:10,190 [ERROR] DbBoards:189 - Image file not found for board STEVAL-STWINKT1B: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/steval-stwinkt1b_small.jpg
+2023-09-14 13:12:10,357 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:10,412 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/LEGION/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2023-09-14 13:12:10,449 [INFO] IntegrityCheckThread:76 - exiting critical section [integrity check]
+2023-09-14 13:12:10,449 [INFO] IntegrityCheckThread:79 - End integrity checks thread
+2023-09-14 13:12:10,766 [ERROR] DbBoards:189 - Image file not found for board STM32G0C1E-EV: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32g0c1e-eval_small.jpg
+2023-09-14 13:12:10,881 [ERROR] DbBoards:189 - Image file not found for board STM32H7B3I-EVAL: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32h7b3ieval_small.jpg
+2023-09-14 13:12:11,108 [ERROR] DbBoards:189 - Image file not found for board STM32U575I-EV: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32u575i-ev_small.jpg
+2023-09-14 13:12:11,155 [ERROR] DbBoards:189 - Image file not found for board STM32WB5MM-DK: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/STM32WB5MM-DK_small.jpg
+2023-09-14 13:12:11,155 [INFO] ApiDb:192 - User favorites file not found: C:\Users\LEGION/.stm32cubemx/favorites.boards.txt
+2023-09-14 13:12:11,155 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2023-09-14 13:12:11,157 [INFO] DbBoardsDocs:81 - Found 418 boards documents
+2023-09-14 13:12:11,159 [INFO] ApiDb:226 - Save user favorites file C:\Users\LEGION/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2023-09-14 13:12:11,159 [INFO] ApiDb:230 - User favorites Boards=[]
+2023-09-14 13:12:11,161 [INFO] DbBoardsPdsc:94 - Found 23 items
+2023-09-14 13:12:11,162 [INFO] DbBoardsPdsc:94 - Found 9 items
+2023-09-14 13:12:11,164 [INFO] DbBoardsPdsc:94 - Found 29 items
+2023-09-14 13:12:11,164 [INFO] DbBoardsPdsc:94 - Found 1 items
+2023-09-14 13:12:11,168 [INFO] DbBoardsPdsc:94 - Found 44 items
+2023-09-14 13:12:11,172 [INFO] DbBoardsPdsc:94 - Found 40 items
+2023-09-14 13:12:11,175 [INFO] DbBoardsPdsc:94 - Found 2 items
+2023-09-14 13:12:11,176 [INFO] DbBoardsPdsc:94 - Found 4 items
+2023-09-14 13:12:11,177 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2023-09-14 13:12:11,179 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2023-09-14 13:12:11,181 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2023-09-14 13:12:11,181 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2023-09-14 13:12:11,181 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2023-09-14 13:12:11,203 [INFO] DbBoardsJson:85 - JSON generation date=Tue Nov 16 18:17:54 EET 2021 (1637079474)
+2023-09-14 13:12:11,209 [INFO] DbBoards:117 - Found 166 boards (149 are supported by CubeMX)
+2023-09-14 13:12:11,211 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2023-09-14 13:12:11,212 [WARN] DbBoards:127 - board NUCLEO-H743ZI has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STEVAL-STWINKT1B has no document id list !
+2023-09-14 13:12:11,213 [WARN] DbBoards:127 - board STM32439I-EVAL2 has no document id list !
+2023-09-14 13:12:11,214 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2023-09-14 13:12:11,214 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2023-09-14 13:12:11,215 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2023-09-14 13:12:11,215 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2023-09-14 13:12:11,215 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2023-09-14 13:12:11,215 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2023-09-14 13:12:11,216 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2023-09-14 13:12:11,257 [ERROR] DbBoards:189 - Image file not found for board B-L462E-CELL1: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/B-L462E-CELL1_small.jpg
+2023-09-14 13:12:11,288 [ERROR] DbBoards:189 - Image file not found for board B-U585I-IOT02A: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/B-U585I-IOT02A_small.jpg
+2023-09-14 13:12:11,335 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-F413ZH: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-f413zh_small.jpg
+2023-09-14 13:12:11,434 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-L552ZE-Q: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo_l552ze_q_small.jpg
+2023-09-14 13:12:11,434 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-U575ZI-Q: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-u575zi-q_small.jpg
+2023-09-14 13:12:11,434 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WB15CC: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wb15cc_small.jpg
+2023-09-14 13:12:11,434 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WB55RG: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wb55rg_small.jpg
+2023-09-14 13:12:11,435 [ERROR] DbBoards:189 - Image file not found for board NUCLEO-WL55JC: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/nucleo-wl55jc-small.jpg
+2023-09-14 13:12:11,504 [ERROR] DbBoards:189 - Image file not found for board STEVAL-STWINKT1B: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/steval-stwinkt1b_small.jpg
+2023-09-14 13:12:11,635 [ERROR] DbBoards:189 - Image file not found for board STM32G0C1E-EV: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32g0c1e-eval_small.jpg
+2023-09-14 13:12:11,677 [ERROR] DbBoards:189 - Image file not found for board STM32H7B3I-EVAL: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32h7b3ieval_small.jpg
+2023-09-14 13:12:11,758 [ERROR] DbBoards:189 - Image file not found for board STM32U575I-EV: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/stm32u575i-ev_small.jpg
+2023-09-14 13:12:11,770 [ERROR] DbBoards:189 - Image file not found for board STM32WB5MM-DK: D:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.0.202007160824\\db\/plugins/mcufinder/images/boards/STM32WB5MM-DK_small.jpg
+2023-09-14 13:12:11,771 [INFO] ApiDb:201 - Load user favorites file C:\Users\LEGION/.stm32cubemx/favorites.boards.txt: 0 item(s)
+2023-09-14 13:12:11,771 [INFO] ApiDb:205 - User favorites Boards=[]
+2023-09-14 13:12:11,771 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2023-09-14 13:12:11,861 [INFO] DbExamplesSqlite:156 - SQLite db open (C:\Users\LEGION\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2023-09-14 13:12:12,411 [INFO] DbExamplesSqlite:447 - Ignored 0 examples not supported by CubeIDE
+2023-09-14 13:12:12,412 [INFO] DbExamplesSqlite:448 - Found 7232 examples active
+2023-09-14 13:12:12,412 [INFO] DbExamplesSqlite:449 - Found 678 examples obsolete
+2023-09-14 13:12:12,412 [INFO] DbExamplesSqlite:450 - Found 0 examples under development
+2023-09-14 13:12:12,412 [INFO] DbExamplesSqlite:451 - Found 74 examples not building
+2023-09-14 13:12:12,459 [INFO] DbExamplesSqlite:130 - SQLite Data Model version=2.1
+2023-09-14 13:12:12,459 [INFO] DbExamplesSqlite:131 - SQLite Configuration version=3.0.37
+2023-09-14 13:12:12,460 [INFO] DbExamplesSqlite:132 - SQLite generation date=2023-08-31 (1693470701)
+2023-09-14 13:12:12,460 [INFO] DbExamplesSqlite:133 - SQLite FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.1, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V4.3.1, FP-SNS-MOTENV1_V4.3.2, STM32Cube_FW_C0_V1.1.0, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.1.1, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.3.0, STM32Cube_FW_U5_V1.3.0RC4, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.1.0, STM32Cube_FW_WBA_V1.1.0RC1, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WB_V1.17.0, STM32Cube_FW_WB_V1.17.2, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7_V3.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V2.0.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-FREERTOS_V1.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.6.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.3.1]
+2023-09-14 13:12:12,460 [INFO] DbExamples:123 - Found 7306 examples
+2023-09-14 13:12:12,730 [ERROR] DbExamples:199 - Found 7306 examples with invalid data (board or MCU)
+2023-09-14 13:12:12,731 [INFO] DbExamples:215 - Found 77 boards with related examples
+2023-09-14 13:12:12,731 [INFO] DbExamples:228 - Found 0 MCUs with related examples
+2023-09-14 13:12:12,756 [INFO] ApiDb:192 - User favorites file not found: C:\Users\LEGION/.stm32cubemx/favorites.examples.txt
+2023-09-14 13:12:12,756 [INFO] DbExamples:249 - Set 0 / 0 favorites Examples
+2023-09-14 13:12:12,999 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-09-14 13:12:13,128 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\LEGION\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2023-09-14 13:12:13,132 [INFO] MultiScanPanel:193 - Auto-refresh data requested => check proxy status ongoing
+2023-09-14 13:12:13,134 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2023-09-14 13:12:13,422 [INFO] LoadUrlFilesThread:162 - End of LoadServerUrlFiles without Thread
+2023-09-14 13:12:13,454 [INFO] DetailPanel:331 - Set advertising image to C:/Users/LEGION/STM32Cube/Repository/\stm32cubemx-promo_image.jpg
+2023-09-14 13:12:13,723 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2023-09-14 13:12:21,517 [INFO] MultiScanPanel:193 - Auto-refresh data requested => check proxy status ongoing
+2023-09-14 13:12:21,563 [INFO] LoadUrlFilesThread:162 - End of LoadServerUrlFiles without Thread
+2023-09-14 13:12:21,563 [INFO] DetailPanel:331 - Set advertising image to C:/Users/LEGION/STM32Cube/Repository/\stm32cubemx-promo_image.jpg
+2023-09-14 13:12:21,592 [INFO] BoardFilterPanel:214 - Update 0 favorites Boards
+2023-09-14 13:13:31,794 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.4
+2023-09-14 13:13:31,795 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.3
+2023-09-14 13:13:31,795 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.2
+2023-09-14 13:13:31,796 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.1
+2023-09-14 13:13:31,796 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.8.0
+2023-09-14 13:13:36,289 [INFO] ApiDb:226 - Save user favorites file C:\Users\LEGION/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-09-14 13:13:36,290 [INFO] ApiDb:230 - User favorites MCUs=[]
+2023-09-14 13:13:36,292 [INFO] ApiDb:226 - Save user favorites file C:\Users\LEGION/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-09-14 13:13:36,292 [INFO] ApiDb:230 - User favorites Boards=[]
