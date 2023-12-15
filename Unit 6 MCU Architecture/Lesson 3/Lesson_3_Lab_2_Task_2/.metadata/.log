@@ -1,0 +1,21 @@
+!SESSION 2023-12-15 17:44:40.474 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-15 17:45:16.621
+!MESSAGE Log4j initialized with config file D:\Keroll\Second term\Unit 6 (MCU Architecture)\Labs\Lesson 3\Lesson_3_Lab_2_Task_2\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-15 17:45:19.868
+!MESSAGE Started RMI Server, listening on port 41340
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2023-12-15 17:45:20.552
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-15 17:48:21.259
+!MESSAGE Indexed 'Lesson_3_Lab_2_Task_2' (0 sources, 0 headers) in 0.014 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-15 17:48:22.778
+!MESSAGE Indexed 'Lesson_3_Lab_2_Task_2' (3 sources, 0 headers) in 0.038 sec: 69 declarations; 45 references; 10 unresolved inclusions; 0 syntax errors; 24 unresolved names (17%)
