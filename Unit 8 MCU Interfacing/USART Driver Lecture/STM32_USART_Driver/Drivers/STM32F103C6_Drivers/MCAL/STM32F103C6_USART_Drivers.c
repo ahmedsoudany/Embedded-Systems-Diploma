@@ -324,7 +324,7 @@ void MCAL_UART_ReceiveData(USART_Typedef* USARTx, uint16_t *pRxBuffer, enum Poll
 		}
 	}
 
-	else if (USARTx == USART2)
+	else if (USARTx == USART3)
 	{
 		if(Global_UART_Config[2]->Payload_Length == UART_Payload_Length_9B)
 		{
