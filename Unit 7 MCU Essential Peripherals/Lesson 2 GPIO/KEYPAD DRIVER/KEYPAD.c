@@ -9,195 +9,63 @@
 #include "KEYPAD.h"
 
 
-//-----------------------------
-//Global Variables
-//-----------------------------
+int keypad_R[] = {R0, R1, R2, R3}; 
+int keypad_C[] = {C0, C1, C2, C3}; 
 
-int Keypad_Row[] = {R0 , R1 , R2 , R3};
-int Keypad_Col[] = {C0 , C1 , C2 };
-
-///* ========================================== */
-///*			 Functions Definitions 			  */
-///* ========================================== */
-/*
-void keypad_Init()
+void KEYPAD_INIT(void)
 {
-	GPIO_PinConfig_t PinCfg;
-
-
-	/* All Rows and Columns are OUTPUT */
-/*
-	PinCfg.GPIO_PinNumber = R0;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	PinCfg.GPIO_PinNumber = R1;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	PinCfg.GPIO_PinNumber = R2;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	PinCfg.GPIO_PinNumber = R3;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	PinCfg.GPIO_PinNumber = C0;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	PinCfg.GPIO_PinNumber = C1;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	PinCfg.GPIO_PinNumber = C2;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED = GPIO_SPEED_10M;
-	MCAL_GPIO_Init(KeypadPORT, &PinCfg);
-
-	// Activate PUR for input
-	  // Send high signal for output
-	MCAL_GPIO_WritePort(KeypadPORT, 0xFF);
-
+	// scanning the rows
+	KEYPAD_DataDir &= ~((1<<R0)|(1<<R1)|(1<<R2)|(1<<R3)); // Set upper part of keypad port as input
+	
+	KEYPAD_DataDir |= ((1<<C0)|(1<<C1)|(1<<C2)|(1<<C3)); // Set lower part of keypad port as output 
+	KEYPAD_PORT = 0xFF; 
 }
-*/
-/*
-char keypad_GetKey()
+
+char KEYPAD_GET_KEY(void)
 {
-	int i , j;
-
-	// loop ==> to find the Column
-	for(i = 0 ; i < 3 ; i++)
+	int i, j;
+	for (i = 0; i < 4; i++)
 	{
-		// All Column PINS are SET to 1
-		MCAL_GPIO_WritePin(KeypadPORT, Keypad_Col[0], GPIO_PIN_SET);
-		MCAL_GPIO_WritePin(KeypadPORT, Keypad_Col[1], GPIO_PIN_SET);
-		MCAL_GPIO_WritePin(KeypadPORT, Keypad_Col[2], GPIO_PIN_SET);
-
-
-		// ONLY ONE Column is SET to 0
-		// To Check if pin is pressed
-		MCAL_GPIO_WritePin(KeypadPORT, Keypad_Col[i], GPIO_PIN_RESET);
-
-
-		// loop ==> to find the Row
-		for(j = 0 ; j < 4 ; j++)
+		KEYPAD_PORT |= ((1<<keypad_C[0])|(1<<keypad_C[1])|(1<<keypad_C[2])|(1<<keypad_C[3]));
+		KEYPAD_PORT &= ~(1<<keypad_C[i]); // Send a low to a particular row of the keypad
+		for (j = 0; j < 4; j++)
 		{
-
-			if((MCAL_GPIO_ReadPin(KeypadPORT,Keypad_Row[j])) == 0)
+			if (!(KEYPAD_PIN & (1<<keypad_R[j]))) // Check if is key is pressed
 			{
-				// Single pressed
-				while((MCAL_GPIO_ReadPin(KeypadPORT,Keypad_Row[j])) == 0);
-
-				switch(i)
+				while (!(KEYPAD_PIN & (1<<keypad_R[j]))); // Wait for the key to be released (Single pressed)
+				switch (i)
 				{
-					case 0:
-
-						     if(j == 0) return '1';
-						else if(j == 1) return '4';
-						else if(j == 2) return '7';
-						else if(j == 3) return '*';
+				case 0:
+					if (j == 0) return '7';
+					else if(j == 1) return '4';
+					else if(j == 2) return '1';
+					else if(j == 3) return '?';
 					break;
-
-					case 1:
-
-						     if(j == 0) return '2';
-						else if(j == 1) return '5';
-						else if(j == 2) return '8';
-						else if(j == 3) return '0';
+				
+				case 1:
+					if (j == 0) return '8';
+					else if(j == 1) return '5';
+					else if(j == 2) return '2';
+					else if(j == 3) return '0';
 					break;
-
-
-					case 2:
-
-						     if(j == 0) return '3';
-						else if(j == 1) return '6';
-						else if(j == 2) return '9';
-						else if(j == 3) return '#';
+				
+				case 2:
+					if (j == 0) return '9';
+					else if(j == 1) return '6';
+					else if(j == 2) return '3';
+					else if(j == 3) return '=';
 					break;
-
-
+				
+				case 3:
+					if (j == 0) return '/';
+					else if(j == 1) return '*';
+					else if(j == 2) return '-';
+					else if(j == 3) return '+';
+					break;
 				}
-
 			}
 		}
+			
 	}
 	return 'A'; // Return 'A' if no key is pressed
-
 }
-*/
-
-
-void keypad_Init(void)
-{
-
-	GPIO_PinConfig_t PinCfg;
-
-	PinCfg.GPIO_PinNumber=R0;
-	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_PU;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-	PinCfg.GPIO_PinNumber=R1;
-	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_PU;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-	PinCfg.GPIO_PinNumber=R2;
-	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_PU;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-	PinCfg.GPIO_PinNumber=R3;
-	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_PU;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-	PinCfg.GPIO_PinNumber=C0;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-	PinCfg.GPIO_PinNumber=C1;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-	PinCfg.GPIO_PinNumber=C2;
-	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
-	PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
-	MCAL_GPIO_Init(GPIOB, &PinCfg);
-
-}
-
-char keypad_GetKey(void)
-{
-	while(1)
-	{
-	MCAL_GPIO_WritePort(GPIOB, C0);// Make Pin B5 High
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R0 ) return '1';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R1 ) return '4';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R2 ) return '7';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R3 ) return '*';
-
-
-	MCAL_GPIO_WritePort(GPIOB, C1); // Make Pin B6 High
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) & 	R0 ) return '2';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R1 ) return '5';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R2 ) return '8';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R3 ) return '0';
-
-
-	MCAL_GPIO_WritePort(GPIOB, C2); // Make Pin B7 High
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R0 ) return '3';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R1 ) return '6';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R2 ) return '9';
-	if(  (MCAL_GPIO_ReadPort(GPIOB)) &	R3 ) return '#';
-	}
-
-	return 'A';
-}
-
