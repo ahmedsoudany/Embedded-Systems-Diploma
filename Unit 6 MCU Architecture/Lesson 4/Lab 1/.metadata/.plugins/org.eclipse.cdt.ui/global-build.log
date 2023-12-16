@@ -218,3 +218,113 @@ arm-none-eabi-size   Interrupt_code.elf
     776	      8	   1568	   2352	    930	Interrupt_code.elf
 Finished building: default.size.stdout
  
+19:26:37 **** Build of configuration Debug for project Leeson_4_lab_1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c:24:1: error: expected identifier or '(' before '/' token
+ /Addresses of tHE GPIOA
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:87:2: warning: implicit declaration of function 'GPIO_PIN13_output_init'; did you mean 'GPIO_PINO_input_init'? [-Wimplicit-function-declaration]
+  GPIO_PIN13_output_init();
+  ^~~~~~~~~~~~~~~~~~~~~~
+  GPIO_PINO_input_init
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:26:44 **** Incremental Build of configuration Debug for project Leeson_4_lab_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Leeson_4_lab_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Git\Embedded-Systems-Diploma\Unit 6 MCU Architecture\Lesson 4\Lab 1\Leeson_4_lab_1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Leeson_4_lab_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Leeson_4_lab_1.elf
+ 
+arm-none-eabi-size   Leeson_4_lab_1.elf 
+arm-none-eabi-objdump -h -S  Leeson_4_lab_1.elf  > "Leeson_4_lab_1.list"
+arm-none-eabi-objcopy  -O binary  Leeson_4_lab_1.elf  "Leeson_4_lab_1.bin"
+   text	   data	    bss	    dec	    hex	filename
+    776	      8	   1568	   2352	    930	Leeson_4_lab_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Leeson_4_lab_1.list
+Finished building: Leeson_4_lab_1.bin
+ 
+ 
+19:44:40 **** Incremental Build of configuration Debug for project Leeson_4_lab_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Leeson_4_lab_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Git\Embedded-Systems-Diploma\Unit 6 MCU Architecture\Lesson 4\Lab 1\Leeson_4_lab_1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Leeson_4_lab_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Leeson_4_lab_1.elf
+ 
+arm-none-eabi-objdump -h -S  Leeson_4_lab_1.elf  > "Leeson_4_lab_1.list"
+arm-none-eabi-objcopy  -O binary  Leeson_4_lab_1.elf  "Leeson_4_lab_1.bin"
+arm-none-eabi-size   Leeson_4_lab_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	Leeson_4_lab_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Leeson_4_lab_1.list
+Finished building: Leeson_4_lab_1.bin
+ 
+ 
+19:44:56 **** Incremental Build of configuration Debug for project Leeson_4_lab_1 ****
+make -j16 all 
+arm-none-eabi-size   Leeson_4_lab_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	Leeson_4_lab_1.elf
+Finished building: default.size.stdout
+ 
+19:50:28 **** Incremental Build of configuration Debug for project Leeson_4_lab_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:45:0: warning: "GPIOA_CRH" redefined
+ #define GPIOA_CRH  *(volatile unsigned int *)(GPIOA_Base + 0x04)
+ 
+../Src/main.c:26:0: note: this is the location of the previous definition
+ #define GPIOA_CRH  *(volatile unsigned int *)(EXTI_Base + 0x04)
+ 
+../Src/main.c:46:0: warning: "GPIOA_ODR" redefined
+ #define GPIOA_ODR  *(volatile unsigned int *)(GPIOA_Base + 0x0C)
+ 
+../Src/main.c:27:0: note: this is the location of the previous definition
+ #define GPIOA_ODR  *(volatile unsigned int *)(EXTI_Base + 0x0C)
+ 
+../Src/main.c:47:0: warning: "GPIOA_CRL" redefined
+ #define GPIOA_CRL  *(volatile unsigned int *)(GPIOA_Base + 0x00) // To config the external push button
+ 
+../Src/main.c:28:0: note: this is the location of the previous definition
+ #define GPIOA_CRL  *(volatile unsigned int *)(EXTI_Base + 0x00) // To config the external push button
+ 
+arm-none-eabi-gcc -o "Leeson_4_lab_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Git\Embedded-Systems-Diploma\Unit 6 MCU Architecture\Lesson 4\Lab 1\Leeson_4_lab_1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Leeson_4_lab_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Leeson_4_lab_1.elf
+ 
+arm-none-eabi-objdump -h -S  Leeson_4_lab_1.elf  > "Leeson_4_lab_1.list"
+arm-none-eabi-objcopy  -O binary  Leeson_4_lab_1.elf  "Leeson_4_lab_1.bin"
+arm-none-eabi-size   Leeson_4_lab_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	Leeson_4_lab_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Leeson_4_lab_1.bin
+Finished building: Leeson_4_lab_1.list
+ 
+ 
+19:50:45 **** Incremental Build of configuration Debug for project Leeson_4_lab_1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Leeson_4_lab_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Keroll\Git\Embedded-Systems-Diploma\Unit 6 MCU Architecture\Lesson 4\Lab 1\Leeson_4_lab_1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Leeson_4_lab_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Leeson_4_lab_1.elf
+ 
+arm-none-eabi-objdump -h -S  Leeson_4_lab_1.elf  > "Leeson_4_lab_1.list"
+arm-none-eabi-objcopy  -O binary  Leeson_4_lab_1.elf  "Leeson_4_lab_1.bin"
+arm-none-eabi-size   Leeson_4_lab_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	Leeson_4_lab_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Leeson_4_lab_1.bin
+Finished building: Leeson_4_lab_1.list
+ 
+ 
